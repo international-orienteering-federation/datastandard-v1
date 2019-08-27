@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<!ELEMENT Country EMPTY> 
-<!ATTLIST Country 
-name CDATA #REQUIRED
-shortName CDATA #REQUIRED
-modifyDate CDATA #IMPLIED>

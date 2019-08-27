@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!ENTITY % Course SYSTEM "iofCourse.dtd">
-%Course;
-
-<!ELEMENT CourseList (RaceClassId?, Course*)>
-<!ATTLIST CourseList
-  ModifyDate CDATA #IMPLIED>
-<!ELEMENT RaceClassId (Identity*)>
