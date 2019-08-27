@@ -1,4 +1,4 @@
-# IOF Data Standard, version 0 and 1
+# IOF Data Standard, versions 0 and 1
 
 As work in progress the standard was numbered 1.0 to 1.5. But to mark these as unfinished an extra 0 has been added. So now they are numbered 0.1.0 to 0.1.5. The official standard (proposal version 1.6) is numbered 1.0.
 This new numbering has not been enforced in the text below, only in the headlines.
