@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<!ELEMENT PunchingUnitType EMPTY>
-<!ATTLIST PunchingUnitType 
-  typeName CDATA #REQUIRED
-  purpose CDATA #REQUIRED
-  supplier CDATA #REQUIRED
-  modifyDate CDATA #IMPLIED
->
