@@ -38,7 +38,7 @@ Organisations can now recurse such that an organisation can be a member of anoth
 
 There has been a request to translate/transform these dtd models into the more robust XML Scheme format. (ie define the xml standard in xml itself). While this is desirable, I do not have the time to do this. If someone out there is willing and has the time for this work, please contact me or just do it and send them to me at which time I will include them in this documentation and promise to maintain them.
 
-Ted de St. Croix (email: tcr@ebyran.com)
+Ted de St. Croix
 
 ## Version 0.1.5
 Proposal version 1.5, July 22, 2000
