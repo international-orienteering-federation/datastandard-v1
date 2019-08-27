@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!ELEMENT Service EMPTY>
+<!ATTLIST Service 
+name CDATA #REQUIRED
+shortName CDATA #REQUIRED
+comment CDATA #IMPLIED
+price CDATA #REQUIRED
+maxNumber CDATA #REQUIRED
+modifyDate CDATA #IMPLIED
+>

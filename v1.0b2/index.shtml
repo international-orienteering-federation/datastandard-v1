@@ -1,0 +1,320 @@
+<!--#set var="TITLE" value="Data Standard, version 1.0 beta 2" -->
+<!--#include virtual="../../header.shtml" -->
+<p>
+
+PROPOSED IOF 
+EVENT INFORMATION 
+EXCHANGE STANDARD
+<p>
+IOF Data Standard, version 1.0b2, May 2001.
+<p>
+
+Again the iofCourseList, iofControlList and iofCourse have been
+revised. This is because it is mostly in the field of interfacing
+between course, event and especially result software that current
+development is taking place. Finn Arildsen has made an export
+mechanism in Condes which is used by EasyOn.net.
+ 
+<h5>Courses and CourseLists</h5>
+
+The RaceClass has been merged into Course making a CourseList simply
+... a list of Courses. This is done by renaming the 1.0b1 Course to
+CourseVariant and make a new aggregation, Course, that consists of a
+list of RaceClasses and one or more CourseVariants.
+
+<h5>ControlList and ControlInfo</h5>
+
+The position of a control is now seperated into a independent element,
+ControlPoint holding a single Coordinate element. This is added to the
+ControlInfo. In the same process the Description element of
+ControlInfo is no longer mandatory. This makes it easier to make a low
+footprint exchange of the control positions only.
+
+<h5>CourseData</h5>
+
+In order to aggregate all information about controls and courses a
+CourseData element have been invented. This makes it possible to
+exchange <em>all</em> data about courses and controls in a single
+file.
+
+<p>
+
+/Kell Sønnichsen (<a href="mailto:kell@soenniksen.dk">kell@soenniksen.dk</a>)
+
+<p>
+<hr size=1>
+<p>
+
+STANDALONE ENTRIES <BR>
+<A href="datastandard/1.0b2/iofEntries.txt">iofEntries.dtd</A>/
+<A href="datastandard/1.0b2/iofEntries.xml">xml</A> <BR>
+&nbsp;&nbsp;&nbsp; <A href="datastandard/1.0b2/iofEntry.txt">iofEntry.dtd</A>/
+<A href="datastandard/1.0b2/iofEntry.xml">xml</A>&nbsp; <BR>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofCCard.txt">iofCCard.dtd</A>/<A
+href="datastandard/1.0b2/iofCCard.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; <A
+href="datastandard/1.0b2/iofPerson.txt">iofPerson.dtd</A>/<A
+href="datastandard/1.0b2/iofPerson.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofServiceRequest.txt">iofServiceRequest.dtd</A>/<A
+href="datastandard/1.0b2/iofServiceRequest.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<A href="datastandard/1.0b2/iofTransaction.txt">iofTransaction.dtd</A>/<A
+href="datastandard/1.0b2/iofTransaction.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofAddress.txt">iofAddress.dtd</A>/<A
+href="datastandard/1.0b2/iofAddress.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofTele.txt">iofTele.dtd</A>/<A
+href="datastandard/1.0b2/iofTele.xml">xml</A><BR>
+ <BR>
+STANDALONE RESULTS <BR>
+<A
+href="datastandard/1.0b2/iofResults.txt">iofResults.dtd</A>/<A
+href="datastandard/1.0b2/iofResults.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp;  <A
+href="datastandard/1.0b2/iofCompetitor.txt">iofCompetitor.dtd</A>/<A
+href="datastandard/1.0b2/iofCompetitor.xml">xml</A>  <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+  <A
+href="datastandard/1.0b2/iofPerson.txt">iofPerson.dtd</A>/<A
+href="datastandard/1.0b2/iofPerson.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+  <A
+href="datastandard/1.0b2/iofServiceRequest.txt">iofServiceRequest.dtd</A>/<A
+href="datastandard/1.0b2/iofServiceRequest.xml">xml</A><BR>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ <A
+href="datastandard/1.0b2/iofTransaction.txt">iofTransaction.dtd</A>/<A
+href="datastandard/1.0b2/iofTransaction.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<A
+href="datastandard/1.0b2/iofAddress.txt">iofAddress.dtd</A>/<A
+href="datastandard/1.0b2/iofAddress.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<A href="datastandard/1.0b2/iofTele.txt">iofTele.dtd</A>/<A
+href="datastandard/1.0b2/iofTele.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp;  <A
+href="datastandard/1.0b2/iofCCard.txt">iofCCard.dtd</A>/<A
+href="datastandard/1.0b2/iofCCard.xml">xml</A> <BR>
+&nbsp;&nbsp;&nbsp;  <A
+href="datastandard/1.0b2/iofSplitTimes.txt">iofSplitTimes.dtd</A>/<A
+href="datastandard/1.0b2/iofSplitTimes.xml">xml</A>  <BR>
+&nbsp;&nbsp;&nbsp;  <A
+href="datastandard/1.0b2/iofTimes.txt">iofTimes.dtd</A>/<A
+href="datastandard/1.0b2/iofTimes.xml">xml</A> <BR>
+
+A ServiceRequest is an object used to
+detail requests for such things as tent sites, result hard copies etc.&nbsp; The
+sort of non standard items that each event offers to participants.<BR>
+A Transaction is an object for
+storing financial records with.<BR>
+ &nbsp;<BR>
+STANDALONE
+STARTLIST <BR>
+<A
+href="datastandard/1.0b2/iofStartList.txt">iofStartList.dtd</A>/<A
+href="datastandard/1.0b2/iofStartList.xml">xml</A>
+&nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofCompetitor.txt">iofCompetitor.dtd</A>/<A
+href="datastandard/1.0b2/iofCompetitor.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <A
+href="datastandard/1.0b2/iofPerson.txt">iofPerson.dtd</A>/<A
+href="datastandard/1.0b2/iofPerson.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofServiceRequest.txt">iofServiceRequest.dtd</A>/<A
+href="datastandard/1.0b2/iofServiceRequest.xml">xml</A><BR>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofTransaction.txt">iofTransaction.dtd</A>/<A
+href="datastandard/1.0b2/iofTransaction.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<A
+href="datastandard/1.0b2/iofAddress.txt">iofAddress.dtd</A>/<A
+href="datastandard/1.0b2/iofAddress.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<A href="datastandard/1.0b2/iofTele.txt">iofTele.dtd</A>/<A
+href="datastandard/1.0b2/iofTele.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofCCard.txt">iofCCard.dtd</A>/<A
+href="datastandard/1.0b2/iofCCard.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofTimes.txt">iofTimes.dtd</A>/<A
+href="datastandard/1.0b2/iofTimes.xml">xml</A><BR>
+Tele is short for
+telecommunication.<BR>
+<P>
+
+COURSE DATA
+<br>
+<A
+href="datastandard/1.0b2/iofCourseData.txt">iofCourseData.dtd</A>/<A
+href="datastandard/1.0b2/iofCourseData.xml">xml</A><BR>
+iofCourseData is putting together all information about courses and
+controls. This means that it can <em>all</em> be exchanged in a single
+XML file.
+<p>
+
+COURSE LIST / COURSE
+<BR>
+<A
+href="datastandard/1.0b2/iofCourseList.txt">iofCourseList.dtd</A>/<A
+href="datastandard/1.0b2/iofCourseList.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofCourse.txt">iofCourse.dtd</A>/<A
+href="datastandard/1.0b2/iofCourse.xml">xml</A> <BR>
+<P>
+CONTROLLIST / CONTROLINFO<BR>
+<A
+href="datastandard/1.0b2/iofControlList.txt">iofControlList.dtd</A>/<A
+href="datastandard/1.0b2/iofControlList.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;<A
+href="datastandard/1.0b2/iofControlInfo.txt">iofControlInfo.dtd</A>/<A
+href="datastandard/1.0b2/iofControlInfo.xml">xml</A><BR>
+<P>
+
+RACECLASS / EVENTCLASS / BASECLASS<BR>
+<A
+href="datastandard/1.0b2/iofEventClass.txt">iofEventClass.dtd</A>/<A
+href="datastandard/1.0b2/iofEventClass.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofBaseClass.txt">iofBaseClass.dtd</A>/<A
+href="datastandard/1.0b2/iofBaseClass.xml">xml</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofBadgeGroup.txt">iofBadgeGroup.dtd</A>/<A
+href="datastandard/1.0b2/iofBadgeGroup.xml">xml</A>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofBadgeLimit.txt">iofBadgeLimit.dtd</A>/<A
+href="datastandard/1.0b2/iofBadgeLimit.xml">xml</A>
+<BR>
+&nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofRaceClass.txt">iofRaceClass.dtd</A>/<A
+href="datastandard/1.0b2/iofRaceClass.xml">xml</A> <BR>
+&nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofPunchingUnitType.txt">iofPunchingUnitType.dtd</A>/<A
+href="datastandard/1.0b2/iofPunchingUnitType.xml">xml</A>
+<BR>
+
+An orienteering event requires the use of two class/category
+information objects. An EventClass contains general information about
+a given age category for example H40. For a single day individual
+event, the event also requires a RaceClass which contains detailed
+information pertaining directly to the event (start time, awards time
+etc for that class) A MultiDay event would have one EventClass and
+multi RaceClasses (one for each race day). A BaseClass is a template
+of classes from which EventClasses can be created. BaseClasses are not
+necessary if one wants to recreate EventClasses for each event they
+organise. Badge refers to awards which many nations offer for reaching
+certain standards (percent behind winner for example)
+<P>
+
+ORGANISATION<BR>
+<A
+href="datastandard/1.0b2/iofOrganisation.txt">iofOrganisation.dtd</A>/<A
+href="datastandard/1.0b2/iofOrganisation.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofOrganisationType.txt">iofOrganisationType.dtd</A>/<A
+href="datastandard/1.0b2/iofOrganisationType.xml">xml</A><BR>
+ &nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofPerson.txt">iofPerson.dtd</A>/<A
+href="datastandard/1.0b2/iofPerson.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofIdentity.txt">iofIdentity.dtd</A>/<A
+href="datastandard/1.0b2/iofIdentity.xml">xml</A><BR>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofServiceRequest.txt">iofServiceRequest.dtd</A>/<A
+href="datastandard/1.0b2/iofServiceRequest.xml">xml</A><BR>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofTransaction.txt">iofTransaction.dtd</A>/<A
+href="datastandard/1.0b2/iofTransaction.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<A
+href="datastandard/1.0b2/iofAddress.txt">iofAddress.dtd</A>/<A
+href="datastandard/1.0b2/iofAddress.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<A href="datastandard/1.0b2/iofTele.txt">iofTele.dtd</A>/<A
+href="datastandard/1.0b2/iofTele.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofCountry.txt">iofCountry.dtd</A>/<A
+href="datastandard/1.0b2/iofCountry.xml">xml</A><BR>
+A Club is a sub class of an
+organisation for example.&nbsp; Media, sponsors, can be considered organisations
+for example.  <BR>
+<P>
+
+AN EVENT<BR>
+(No entries, results or startlists as they conflict with
+things like iofClub in the same xml file.&nbsp; Startlists, entries and results
+should be created as separate documents.&nbsp; I would like to add such things
+as sponsors and media collections at a later date.)
+ <BR>
+<A
+href="datastandard/1.0b2/iofEvent.txt">iofEvent.dtd</A>/<A
+href="datastandard/1.0b2/iofEvent.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofEventForm.txt">iofEventForm.dtd</A>/<A
+href="datastandard/1.0b2/iofEventForm.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofEventClassification.txt">iofEventClassification.dtd</A>/<A
+href="datastandard/1.0b2/iofEventClassification.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofClub.txt">iofClub.dtd</A>/<A
+href="datastandard/1.0b2/iofClub.xml">xml</A>&nbsp; <BR>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofPerson.txt">iofPerson.dtd</A>/<A
+href="datastandard/1.0b2/iofPerson.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofServiceRequest.txt">iofServiceRequest.dtd</A>/<A
+href="datastandard/1.0b2/iofServiceRequest.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofTransaction.txt">iofTransaction.dtd</A>/<A
+href="datastandard/1.0b2/iofTransaction.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<A
+href="datastandard/1.0b2/iofAddress.txt">iofAddress.dtd</A>/<A
+href="datastandard/1.0b2/iofAddress.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<A href="datastandard/1.0b2/iofTele.txt">iofTele.dtd</A>/<A
+href="datastandard/1.0b2/iofTele.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofCountry.txt">iofCountry.dtd</A>/<A
+href="datastandard/1.0b2/iofCountry.xml">xml</A> <BR>
+&nbsp;&nbsp;&nbsp;<A
+href="datastandard/1.0b2/iofEventClass.txt">iofEventClass.dtd</A>/<A
+href="datastandard/1.0b2/iofEventClass.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofBaseClass.txt">iofBaseClass.dtd</A>/<A
+href="datastandard/1.0b2/iofBaseClass.xml">xml</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofBadgeGroup.txt">iofBadgeGroup.dtd</A>/<A
+href="datastandard/1.0b2/iofBadgeGroup.xml">xml</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofBadgeLimit.txt">iofBadgeLimit.dtd</A>/<A
+href="datastandard/1.0b2/iofBadgeLimit.xml">xml</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofRaceClass.txt">iofRaceClass.dtd</A>/<A
+href="datastandard/1.0b2/iofRaceClass.xml">xml</A> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <A
+href="datastandard/1.0b2/iofPunchingUnitType.txt">iofPunchingUnitType.dtd</A>/<A
+href="datastandard/1.0b2/iofPunchingUnitType.xml">xml</A> <BR>
+&nbsp;&nbsp;&nbsp;<A
+href="datastandard/1.0b2/iofEventRace.txt">iofEventRace.dtd</A>/<A
+href="datastandard/1.0b2/iofEventRace.xml">xml</A><BR>
+&nbsp;&nbsp;&nbsp;<A
+href="datastandard/1.0b2/iofService.txt">iofService.dtd</A>/<A
+href="datastandard/1.0b2/iofService.xml">xml</A><BR>
+<p>
+
+<!--#set var="REVISED" value="2000-05-21" -->
+<!--#include virtual="../../footer.shtml" -->

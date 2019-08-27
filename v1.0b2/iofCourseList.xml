@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE CourseList SYSTEM "iofCourseList.dtd">
+
+<CourseList>
+
+  <Course ID="101">
+    <RaceClass ID="110" />
+    <RaceClass ID="142" />
+    <CourseVariation ID="101" Name="101" Length="10500" Climb="234" StartID="2" NumberRunners="80" FinishID="2">
+      <StartPoint ControlCode="1"/>
+      <Control Num="1" Code="32" />
+      <Control Num="2" Code="34" />
+      <Control Num="3" Code="35" />
+      <Control Num="4" Code="37" />
+      <Control Num="5" Code="43" Info="Bypass private property" LegLength="334" MarkedRoute="Y"/>
+      <Control Num="6" Code="45" />
+      <Control Num="7" Code="56" />
+      <Control Num="8" Code="77" />
+      <FinishControl ControlCode="500"/>
+    </CourseVariation>
+  </Course>
+
+  <Course ID="102">
+    <CourseVariation ID="102" Name="102" Length="10560" Climb="254" StartID="2" NumberRunners="80" FinishID="2">
+      <StartPoint ControlCode="1"/>
+      <Control Num="1" Code="32" />
+      <Control Num="2" Code="33" />
+      <Control Num="3" Code="36" />
+      <Control Num="4" Code="37" />
+      <Control Num="5" Code="43" Info="Bypass private property" LegLength="334" MarkedRoute="Y"/>
+      <Control Num="6" Code="47" />
+      <Control Num="7" Code="58" />
+      <FinishControl ControlCode="500"/>
+    </CourseVariation>
+  </Course>
+
+</CourseList>

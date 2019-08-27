@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE Results SYSTEM "iofResults.dtd">
+
+<Results>
+ <Result>
+ <Competitor EntClass="M50L" StartNumber="23">
+  <Person Class="M50" ID="222671" ClubName="Manchester and District Orienteering Club" ClubID="MDOC" Sex="M" Nationality="GBR">
+   <Name><Family>Watson</Family><Given>Ian</Given></Name>
+   <BirthDate Year="1947" Month="05" Day="19"/>
+   <Address Street="52 Leegate Road,Heaton Moor" City="Stockport" ZipCode="SK4 4AX" Country="UK"></Address>
+  </Person>
+ </Competitor>
+ <CCard Type="Emit" Id="45"/>
+ <SplitTimes>
+    <Control Order="1" Num="32" Time="1:32"/>
+    <Control Order="2" Num="34" Time="2:40"/>
+ </SplitTimes>
+ <Times>
+<Time Hours="1" Mins="19" Secs="12"/>
+</Times>
+</Result>
+
+ <Result>
+ <Competitor EntClass="M18A" StartNumber="24">
+  <Person Class="M18" ID="222673" ClubName="Manchester and District Orienteering Club" ClubID="MDOC" Sex="M" Nationality="GBR">
+   <Name><Family>Watson</Family><Given>Kevin</Given><Given>David</Given></Name>
+   <BirthDate Year="1981" Month="01" Day="24"/>
+   <Address Street="52 Leegate Road,Heaton Moor" City="Stockport" ZipCode="SK4 4AX" Country="UK"></Address>
+  </Person>
+ </Competitor>
+ <CCard Type="Emit" Id="46"/>
+ <SplitTimes>
+    <Control Order="1" Num="32" Time="1:40"/>
+    <Control Order="2" Num="34" Time="2:46"/>
+ </SplitTimes>
+<Times>
+<Time Mins="89" Secs="12"/>
+</Times>
+ </Result>
+</Results>

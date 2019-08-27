@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!ENTITY % Person SYSTEM "iofPerson.dtd">
+%Person;
+
+<!ENTITY % Country SYSTEM "iofCountry.dtd">
+%Country;
+
+<!ELEMENT Club (Country, Identity*, Address?, Tele?, Contact?, ClubServiceRequest*, ClubTransaction*)>
+<!ATTLIST Club
+  name CDATA #REQUIRED
+  shortName CDATA #REQUIRED
+  Region CDATA #IMPLIED
+  BankAccount CDATA #IMPLIED
+  MerchantID CDATA #IMPLIED
+  ModifyDate CDATA #IMPLIED>
+
+<!ELEMENT Contact (Person)>
+<!ELEMENT ClubServiceRequest (ServiceRequest)>
+<!ELEMENT ClubTransaction (Transaction)>

@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<!DOCTYPE EventForm SYSTEM "iofEventForm.dtd">
+
+<EventForm name="MultiDay" shortName="MD" modifyDate="2000-02-20"/>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!ENTITY % CCard SYSTEM "iofCCard.dtd">
+%CCard;
+<!ENTITY % Person SYSTEM "iofPerson.dtd">
+%Person;
+
+<!ELEMENT Entry (CompetitorId*, Person?, ClubId?, ClubName?, AllocationControl?, EntryClass*, EntryTransaction*, CCard? )>
+<!ATTLIST Entry
+  createDate CDATA #IMPLIED
+  modifyDate CDATA #IMPLIED
+>
+<!ELEMENT CompetitorId (#PCDATA)>
+<!ELEMENT ClubId (#PCDATA)>
+<!ELEMENT ClubName (#PCDATA)>
+<!ELEMENT AllocationControl EMPTY>
+<!ATTLIST AllocationControl clubId CDATA #IMPLIED>
+<!ELEMENT EntryClass EMPTY>
+<!ATTLIST EntryClass
+  id CDATA #REQUIRED
+  name CDATA #IMPLIED
+>
+<!ELEMENT EntryTransaction (Transaction)>

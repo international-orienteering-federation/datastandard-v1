@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!ENTITY % Course SYSTEM "iofCourse.dtd">
+%Course;
+
+<!ELEMENT CourseList (CourseId)*>
+<!ATTLIST CourseList
+  ModifyDate CDATA #IMPLIED>
+<!ELEMENT CourseId (#PCDATA)>

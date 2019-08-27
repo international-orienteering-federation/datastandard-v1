@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE ClubList SYSTEM "iofClub.dtd">
+
+<ClubList>
+  <Club Name="StoraTuna IK" ID="18" Country="S" Region="DOF" BankAccount="123456" MerchantID="9123456">
+  <Address Street="malins väg 23" City="Borlänge" ZipCode="784 56" Country="Sweden"/> 
+  <Contact>
+    <Person ID="222671" Sex="M">
+      <Name><Family>Watson</Family><Given>Ian</Given></Name>
+      <Address Street="52 Leegate Road,Heaton Moor" City="Stockport" ZipCode="SK4 4AX" Country="UK"/>
+      <Tele phoneNumber="4313864" faxNumber="76538" mobilePhoneNumber="070435 678" mailAddress="www.ebyran.se" modifyDate="2000.02.20"/> 
+    </Person>
+  <Contact>
+  <Tele phoneNumber="4313864" faxNumber="76538" mobilePhoneNumber="070435 678" mailAddress="www.ebyran.se" modifyDate="2000.02.20"/>
+  <Country name="Sweden" shortName="S" modifyDate="2000.0220"/>
+  </Club>
+</ClubList>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Press SYSTEM "iofPress.dtd">
+
+<Press name="New York Times" shortName="Times" modifyDate="2000.02.20">
+
+  <PersonID>18</PersonID>
+  <Address Street="malins väg 23" City="Borlänge" ZipCode="784 56" Country="Sweden"/> 
+  <Tele phoneNumber="4313864" faxNumber="76538" mobilePhoneNumber="070435 678" mailAddress="www.ebyran.se" modifyDate="2000-02-20"/>
+  <Country name="Sweden" shortName="S" modifyDate="2000-02-20"/>
+
+  <ClubResultSelection>
+    <ClubID>18</ClubID>
+    <ResultSelection number="10" modifyDate="2000-02-20">  
+      <ClassCollection>
+        <BaseClassID>18</BaseClassID>
+        <BaseClassID>19</BaseClassID>
+        <BaseClassID>17</BaseClassID>
+      </ClassCollection>
+    </ResultSelection>
+  </ClubResultSelection>
+
+  <ClassResultSelection>
+    <BaseClassID>100</BaseClassID>
+    <ResultSelection number="10" modifyDate="2000-02-20">  
+      <ClassCollection>
+        <BaseClassID>18</BaseClassID>
+        <BaseClassID>19</BaseClassID>
+        <BaseClassID>17</BaseClassID>
+      </ClassCollection>
+    </ResultSelection>
+  </ClassResultSelection>
+
+  <OrganisationResultSelection>
+    <OrganisationID>19</OrganisationID>
+    <ResultSelection number="10" modifyDate="2000-02-20">  
+      <ClassCollection>
+        <BaseClassID>18</BaseClassID>
+        <BaseClassID>19</BaseClassID>
+        <BaseClassID>17</BaseClassID>
+      </ClassCollection>
+    </ResultSelection>
+  </OrganisationResultSelection>
+
+  <ClubClassResultSelection>
+    <ClubID>18</ClubID>
+    <ClassResultSelection>
+      <BaseClassID>100</BaseClassID>
+      <ResultSelection number="10" modifyDate="2000-02-20">  
+        <ClassCollection>
+          <BaseClassID>18</BaseClassID>
+          <BaseClassID>19</BaseClassID>
+          <BaseClassID>17</BaseClassID>
+        </ClassCollection>
+      </ResultSelection>
+    </ClassResultSelection>
+  </ClubClassResultSelection>
+
+  <OrganisationClassResultSelection>
+    <OrganisationID>19</OrganisationID>
+    <ClassResultSelection>
+      <BaseClassID>100</BaseClassID>
+      <ResultSelection number="10" modifyDate="2000-02-20">  
+        <ClassCollection>
+          <BaseClassID>18</BaseClassID>
+          <BaseClassID>19</BaseClassID>
+          <BaseClassID>17</BaseClassID>
+        </ClassCollection>
+      </ResultSelection>
+    </ClassResultSelection>
+  </OrganisationClassResultSelection>
+
+</Press>

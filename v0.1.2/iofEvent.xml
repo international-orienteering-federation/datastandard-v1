@@ -1,0 +1,132 @@
+<?xml version="1.0"  encoding="ISO-8859-1"?>
+<!DOCTYPE Event SYSTEM "iofEvent.dtd">
+
+<Event name="CompanyChamps" eventId="18" textURL="www.ebyran.com" startDate="2000.10.01" finishDate="2000.10.01" postalGiroAccount="1234321" modifyDate="2000.03.08">
+<EventForm name="IndividualSingleDay" shortName="IndSDay" modifyDate="2000.02.20"/>
+<EventClassification>
+  <EventClassificationType name="Local" shortName="Loc" modifyDate="2000.02.20"/>
+</EventClassification>
+<EventOfficial>
+    <EventOfficialRole>RoleEventDirector</EventOfficialRole>
+    <Person ClubName="Manchester and District Orienteering Club" ClubID="MDOC" Sex="M" Nationality="GBR">
+      <Name><Family>de St. Croix</Family><Given>Ted</Given></Name>
+      <Address Street="malins väg 23" City="Borlänge" ZipCode="784 56" Country="Sweden"/>
+      <Tele phoneNumber="4313864" faxNumber="76538" mobilePhoneNumber="070435 678" mailAddress="tcr@ebyran.com" modifyDate="2000.02.20"/> 
+    </Person>
+</EventOfficial>
+<OrganiserClubs>
+  <Club name="StoraTuna IK" shortName="STIK" ID="18" Region="DOF" BankAccount="123456" MerchantID="123456" >
+    <Country name="Sweden" shortName="S"/>
+    <Address Street="malins väg 23" City="Borlänge" ZipCode="784 56" Country="Sweden"/> 
+    <Tele phoneNumber="4313864" faxNumber="76538" mobilePhoneNumber="070435 678" mailAddress="www.ebyran.se" modifyDate="2000.02.20"/>
+    <Contact>
+      <Person Sex="M">
+        <Name><Family>Watson</Family><Given>Ian</Given></Name>
+        <Address Street="52 Leegate Road,Heaton Moor" City="Stockport" ZipCode="SK4 4AX" Country="UK"/>
+        <Tele phoneNumber="4313864" faxNumber="76538" mobilePhoneNumber="070435 678" mailAddress="www.ebyran.se" modifyDate="2000.02.20"/> 
+      </Person>
+    </Contact>
+  </Club>
+</OrganiserClubs>
+<ClubList>
+  <Club name="StoraTuna IK" shortName="STIK" ID="18" Region="DOF" BankAccount="123456" MerchantID="123456" >
+    <Country name="Sweden" shortName="S"/>
+    <Address Street="malins väg 23" City="Borlänge" ZipCode="784 56" Country="Sweden"/> 
+    <Tele phoneNumber="4313864" faxNumber="76538" mobilePhoneNumber="070435 678" mailAddress="www.ebyran.se" modifyDate="2000.02.20"/>
+    <Contact>
+      <Person Sex="M">
+        <Name><Family>Granath</Family><Given>Ola</Given></Name>
+        <Address Street="52 Leegate Road,Heaton Moor" City="Stockport" ZipCode="SK4 4AX" Country="UK"/>
+        <Tele phoneNumber="4313864" faxNumber="76538" mobilePhoneNumber="070435 678" mailAddress="ola.granath@ebyran.com" modifyDate="2000.02.20"/> 
+      </Person>
+    </Contact>
+  </Club>
+  <Club name="Domnarvet" shortName="DGOIF" ID="17" Region="DOF" BankAccount="154356" MerchantID="53456" >
+    <Country name="Sweden" shortName="S"/>
+    <Address Street="svens väg 3" City="Borlänge" ZipCode="784 43" Country="Sweden"/> 
+    <Tele phoneNumber="43534864" faxNumber="76758" mobilePhoneNumber="070435 768" mailAddress="www.dgoif.se" modifyDate="2000.02.20"/>
+    <Contact>
+      <Person Sex="M">
+        <Name><Family>Svensson</Family><Given>Jan</Given></Name>
+        <Address Street="5 svensväg" City="Domnarvet" ZipCode="784 66" Country="S"/>
+        <Tele phoneNumber="435434" faxNumber="76228" mobilePhoneNumber="070435128" mailAddress="ss@dgoif.se" modifyDate="2000.02.20"/> 
+      </Person>
+    </Contact>
+  </Club>
+</ClubList>
+
+<EventClass>
+  <BaseClass name="H21 Elite" shortName="H21E" classId="10" lowAge="21" highAge="34" sex="M" teamEntry="N" maxNumberInClass="60" actualForRanking="Y" noTimePresentation="N" modifyDate="2000.02.20">
+    <ClassType name="Elite" shortName="E" modifyDate="2000.02.20"/>
+    <SubstituteClass>
+      <ClassID>H21L</ClassID>
+    </SubstituteClass>
+    <NotQualifiedSubstituteClass>
+      <ClassID>H21L</ClassID>
+    </NotQualifiedSubstituteClass>
+    <BadgeGroup name="Gold" shortName="G" comment="Go for the Gold" modifyDate="2000.02.20"/>
+    <BadgeLimit timeFactor="15" modifyDate="2000.02.20">
+      <BadgeValue name="Gold" shortName="G" modifyDate="2000.02.20"/>
+    </BadgeLimit>
+    <EntryFee Name="Regular" Amount="120" Currency="EMU"/>
+  </BaseClass>
+  <RaceClass
+            firstStartTime="09.00.00" 
+            startInterval="1.00" 
+            numberOfVacants="10" 
+            administrationLineCode="1" 
+            noRankingRace="6"    
+            estimatedBestTime="57.00" 
+            estimatedLastPrizeTime="13.00.00" 
+            numberOfPrizes="3" 
+            prizeCeremonyTime="13.20.00" 
+            startNumberPrefix="E" 
+            startNumberBase="100" 
+            finishChute="1" 
+            modifyDate="2000.02.20"
+            course="100" >
+    <AllocationMethod value="Seeded"/>
+    <StartMethod value="Clock"/>
+    <RaceClassStatus value="RaceStatusClosed"/>
+  </RaceClass>
+  <ClassStatus value="unknown"/>
+  <PunchingUnitType typeName="SportIdent" purpose="control" supplier="SportIdent" modifyDate="2000.02.20"/>
+</EventClass>
+<EventRaces>
+  <EventRace name="Day 1" raceDate="2000.02.20" modifyDate="2000.02.20"/>
+  <RaceClass
+            firstStartTime="09.00.00" 
+            startInterval="1.00" 
+            numberOfVacants="10" 
+            administrationLineCode="1" 
+            noRankingRace="6"    
+            estimatedBestTime="57.00" 
+            estimatedLastPrizeTime="13.00.00" 
+            numberOfPrizes="3" 
+            prizeCeremonyTime="13.20.00" 
+            startNumberPrefix="E" 
+            startNumberBase="100" 
+            finishChute="1" 
+            modifyDate="2000.02.20"
+            course="110" >
+    <AllocationMethod value="Seeded"/>
+    <StartMethod value="Clock"/>
+    <RaceClassStatus value="RaceStatusClosed"/>
+  </RaceClass>
+</EventRaces>
+<PersonList>
+  <Person Class="M50" ClubName="Manchester and District Orienteering Club" ClubID="MDOC" Sex="M" Nationality="GBR">
+    <Name><Family>Watson</Family><Given>Ian</Given></Name>
+    <BirthDate Year="1947" Month="05" Day="19"/>
+    <Address Street="52 Leegate Road,Heaton Moor" City="Stockport" ZipCode="SK4 4AX" Country="UK"/>
+    <Tele phoneNumber="4313864" faxNumber="76538" mobilePhoneNumber="070435 678" mailAddress="www.ebyran.se" modifyDate="2000.02.20"/> 
+    <PersonServiceRequest>
+      <ServiceRequest requested="1" delivered="1" modifyDate="2000.02.20">
+      <ServiceName>Tent Site</ServiceName>
+      </ServiceRequest>
+    </PersonServiceRequest>
+  </Person>
+
+</PersonList>
+<BadgeGroup name="Gold" shortName="G" comment="Go for the Gold" modifyDate="2000.02.20"/>
+</Event>

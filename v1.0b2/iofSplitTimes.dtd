@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!ELEMENT SplitTimes (Control*)>
+<!ELEMENT Control (#PCDATA)>
+<!ATTLIST Control
+  Order CDATA #REQUIRED
+  Num CDATA #REQUIRED
+  Time CDATA #REQUIRED>
+

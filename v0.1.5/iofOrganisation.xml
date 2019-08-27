@@ -1,0 +1,25 @@
+<?xml version="1.0"  encoding="ISO-8859-1"?>
+<!DOCTYPE Organisation SYSTEM "iofOrganisation.dtd">
+<Organisation name="eByrån" shortName="eByrån" modifyDate="2000.03.08">
+  <OrganisationType name="Company" modifyDate="2000.02.20"/>
+  <Country name="Sweden" shortName="S"/>
+  <Identity Value="1"/>
+  <Address Street="malins väg 23" City="Borlänge" ZipCode="784 56" Country="Sweden"/>
+  <Tele phoneNumber="4313864" faxNumber="76538" mobilePhoneNumber="070435 678" mailAddress="www.ebyran.com" modifyDate="2000.02.20"/>
+  <Contact>
+    <Person Class="H40" ClubName="Stora Tuna IK" ClubID="STIK" Sex="M" Nationality="CAN">
+      <Name><Family>de St. Croix</Family><Given>Ted</Given></Name>
+      <Identity Type="NAT" Value="345"/>
+      <Address Street="malins väg 23" City="Borlänge" ZipCode="784 56" Country="Sweden"/>
+      <Tele phoneNumber="4313864" faxNumber="76538" mobilePhoneNumber="070435 678" mailAddress="tcr@ebyran.com" modifyDate="2000.02.20"/> 
+    </Person>
+  </Contact>
+    <ClubServiceRequest>
+      <ServiceRequest requested="43" delivered="0" modifyDate="2000.02.20">
+        <ServiceName>Tent Site</ServiceName>
+        <ServiceTransaction>
+           <Transaction account="4321abcd1234" foreignAccount="1234abcd" transactionDate="2000.02.20" amount="125" createDate="2000.02.20" modifyDate="2000.02.20"/>
+        </ServiceTransaction>
+      </ServiceRequest>
+    </ClubServiceRequest>
+</Organisation>

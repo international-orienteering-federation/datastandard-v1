@@ -1,0 +1,420 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./IOF%20XML%20Proposal_files/filelist.xml">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Ted de St. Croix</o:Author>
+  <o:LastAuthor>Ted de St. Croix</o:LastAuthor>
+  <o:Revision>5</o:Revision>
+  <o:TotalTime>273</o:TotalTime>
+  <o:Created>2000-02-15T09:46:00Z</o:Created>
+  <o:LastSaved>2000-02-15T14:41:00Z</o:LastSaved>
+  <o:Pages>3</o:Pages>
+  <o:Words>766</o:Words>
+  <o:Characters>4369</o:Characters>
+  <o:Lines>36</o:Lines>
+  <o:Paragraphs>8</o:Paragraphs>
+  <o:CharactersWithSpaces>5365</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:70.85pt 70.85pt 70.85pt 70.85pt;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US style="tab-interval: .5in">
+
+<div class=Section1>
+
+<p class=MsoNormal><STRONG>PROPOSED 
+IOF EVENT 
+INFORMATION EXCHANGE STANDARD (Proposal version 1.5&nbsp;July 
+22, 2000 replaces previous versions 1.0, 
+1.1, 1.2, 1.3 (April-May, 2000))</STRONG> 
+              
+              
+             
+                    
+             
+  </p>
+<P class=MsoNormal>&nbsp;</P>
+<P class=MsoNormal><EM><STRONG><A 
+href=".\IOF XML Proposal1.4.htm\">Introduction version 
+1.4</A>  </STRONG></EM></P>
+<P class=MsoNormal><EM>This version contains some minor 
+changes from 1.3 requested from Finn Arildsen and changes we made after working 
+with the dtd and xml files in applications.</EM>      
+                 
+ </P>
+<P class=MsoNormal><STRONG></STRONG>&nbsp;</P>
+<P class=MsoNormal><EM><STRONG><A href=".\IOF XML Proposal1.3.htm">Previous 
+Introduction for version 1.3</A></STRONG></EM></P>
+<P class=MsoNormal><EM>This version contains some changes from 1.2 requested 
+from Finn Arildsen and Kell Soennichsen.</EM></P>
+<P class=MsoNormal>&nbsp;</P>
+<P class=MsoNormal><EM><STRONG><A 
+href=".\IOF XML Proposal1.2.htm">Previous Introduction for version 
+1.2</A>    
+</STRONG></EM></P>
+<P class=MsoNormal><EM>This version has implemented 
+suggestions for improvement from Peter Löfås, Finn Arildsen, Olav Nedrelid, 
+Pekka Pirilä received May 5, 2000. </EM>        
+            
+           
+          
+  </P>
+<P class=MsoNormal>        
+            
+           
+          
+  </P>
+<P class=MsoNormal>        
+            
+           
+          
+  </P>
+<P class=MsoNormal><STRONG><EM></EM>    
+</STRONG>&nbsp;</P>
+<P class=MsoNormal><STRONG><EM></EM></STRONG>&nbsp;</P>
+<P class=MsoNormal><STRONG><EM><A href=".\IOF XML Proposal1.1.htm">Previous 
+Introduction for version 1.1</A>    
+</EM></STRONG></P>
+<P class=MsoNormal><EM>This version has implemented 
+suggestions for improvement from Finn Arildsen, Kell Soennichsen received April 
+5 and 10, 2000.&nbsp; </EM>        
+            
+           
+          
+  </P>
+<P class=MsoNormal>&nbsp;</P>
+<P class=MsoNormal><EM><STRONG><A href=".\IOF XML Proposal1.0.htm">Previous 
+Introduction for version 1.0</A>    
+</STRONG></EM></P>
+<P class=MsoNormal><EM>This proposal for the IOF Standard Information Exchange
+using Extensible Markup Language(XML) assumes that users of these standards
+will want some flexibility depending on their situation.<span
+ style="mso-spacerun: yes">&nbsp; </span>In order to achieve 
+this I have created DataTypeDefinitions (DTD) for single
+Entities as much as possible.<span style="mso-spacerun: yes">&nbsp;
+</span>A 
+standard set or collection of data such as Results is then created using a 
+complex DTD which simply includes the necessary DTDs for each entity it needs to 
+support.&nbsp; It has been my goal to reduce the amount of local information 
+parsing.&nbsp; For example my Times.dtd splits hours, mins and secs which frees 
+the user from having to parse something like "10.05.34".&nbsp; This adds extra 
+space to the file but I consider the ease of use of greater importance.</EM>    
+              
+             
+             
+             
+            
+          </P>
+<P class=MsoNormal>&nbsp;</P><![if !supportEmptyParas]><![endif]><![if !supportEmptyParas]><![endif]><![if !supportEmptyParas]><![endif]><![if !supportEmptyParas]><![endif]><![if !supportEmptyParas]><![endif]><![if !supportEmptyParas]><![endif]><![if !supportEmptyParas]><![endif]><![if !supportEmptyParas]><![endif]><![if !supportEmptyParas]><![endif]><![if !supportEmptyParas]><![endif]><![if !supportEmptyParas]><![endif]><![if !supportEmptyParas]><![endif]><![if !supportEmptyParas]><![endif]><![if !supportEmptyParas]><![endif]><![if !supportEmptyParas]><![endif]><![if !supportEmptyParas]><![endif]><![if !supportEmptyParas]><![endif]><![if !supportEmptyParas]><![endif]><![if !supportEmptyParas]><![endif]><![if !supportEmptyParas]><![endif]><![if !supportEmptyParas]><![endif]><![if !supportEmptyParas]><![endif]><![if !supportEmptyParas]><![endif]><![if !supportEmptyParas]><![endif]><![if !supportEmptyParas]><![endif]><EM>
+<P class=MsoNormal>     &nbsp;</P>
+<P class=MsoNormal><EM>Send comments to </EM>   <A 
+href="mailto:Ted.de.st.croix@ebyran.com"><EM>Ted.de.st.croix@ebyran.com</EM></A> or <A 
+href="mailto:tcr@triona.com">tcr@triona.com</A></P>
+<P class=MsoNormal><EM> </EM>&nbsp; </P>
+<P class=MsoNormal><EM>STANDALONE ENTRIES</EM> </P>
+<P class=MsoNormal><EM> </EM><A 
+href=".\iofEntries.txt">iofEntries.dtd</A>/<A 
+href=".\iofEntries.xml">xml</A> </P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp; <A 
+href=".\iofEntry.txt">iofEntry.dtd</A>/<A 
+href=".\iofEntry.xml">xml</A>&nbsp; </P><EM>
+<P class=MsoNormal><EM>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; </EM><A 
+href=".\iofCCard.txt"><EM>iofCCard.dtd</EM></A><EM>/</EM><A 
+href=".\iofCCard.xml"><EM>xml</EM></A><EM> </EM></P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; </EM><A 
+href=".\iofPerson.txt"><EM>iofPerson.dtd</EM></A><EM>/</EM><A 
+href=".\iofPerson.xml"><EM>xml</EM></A></P>
+<P class=MsoNormal><EM>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </EM><A 
+href=".\iofServiceRequest.txt"><EM>iofServiceRequest.dtd</EM></A><EM>/</EM><A 
+href=".\iofServiceRequest.xml"><EM>xml</EM></A></P>
+<P 
+class=MsoNormal><EM>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</EM><A href=".\iofTransaction.txt"><EM>iofTransaction.dtd</EM></A><EM>/</EM><A 
+href=".\iofTransaction.xml"><EM>xml</EM></A></P>
+<P class=MsoNormal><EM>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </EM><A 
+href=".\iofAddress.txt"><EM>iofAddress.dtd</EM></A><EM>/</EM><A 
+href=".\iofAddress.xml"><EM>xml</EM></A></P>
+<P class=MsoNormal><EM>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp; </EM><A 
+href=".\iofTele.txt"><EM>iofTele.dtd</EM></A><EM>/</EM><A 
+href=".\iofTele.xml"><EM>xml</EM></A></P>
+<P class=MsoNormal> </P>
+<P class=MsoNormal><EM>STANDALONE RESULTS</EM> </P>
+<P class=MsoNormal><A 
+href=".\iofResults.txt"><EM>iofResults.dtd</EM></A><EM>/</EM><A 
+href=".\iofResults.xml"><EM>xml</EM></A></P>
+<P class=MsoNormal><EM>&nbsp;&nbsp;&nbsp; </EM> <A 
+href=".\iofCompetitor.txt"><EM>iofCompetitor.dtd</EM></A><EM>/</EM><A 
+href=".\iofCompetitor.xml"><EM>xml</EM></A><EM> </EM>  </P>
+<P class=MsoNormal><EM>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 
+</EM>  <A 
+href=".\iofPerson.txt"><EM>iofPerson.dtd</EM></A><EM>/</EM><A 
+href=".\iofPerson.xml"><EM>xml</EM></A></P>
+<P class=MsoNormal><EM>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; 
+</EM>  <A 
+href=".\iofServiceRequest.txt"><EM>iofServiceRequest.dtd</EM></A><EM>/</EM><A 
+href=".\iofServiceRequest.xml"><EM>xml</EM></A></P>
+<P class=MsoNormal><EM>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </EM>  
+ <A 
+href=".\iofTransaction.txt"><EM>iofTransaction.dtd</EM></A><EM>/</EM><A 
+href=".\iofTransaction.xml"><EM>xml</EM></A></P>
+<P class=MsoNormal><EM>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</EM> 
+<A 
+href=".\iofAddress.txt"><EM>iofAddress.dtd</EM></A><EM>/</EM><A 
+href=".\iofAddress.xml"><EM>xml</EM></A></P>
+<P 
+class=MsoNormal><EM>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</EM> 
+<A href=".\iofTele.txt"><EM>iofTele.dtd</EM></A><EM>/</EM><A 
+href=".\iofTele.xml"><EM>xml</EM></A></P>
+<P class=MsoNormal><EM>&nbsp;&nbsp;&nbsp; </EM> <A 
+href=".\iofCCard.txt"><EM>iofCCard.dtd</EM></A><EM>/</EM><A 
+href=".\iofCCard.xml"><EM>xml</EM></A><EM> </EM> </P>
+<P class=MsoNormal><EM>&nbsp;&nbsp;&nbsp; </EM> <A 
+href=".\iofSplitTimes.txt"><EM>iofSplitTimes.dtd</EM></A><EM>/</EM><A 
+href=".\iofSplitTimes.xml"><EM>xml</EM></A><EM> </EM>  </P>
+<P class=MsoNormal><EM>&nbsp;&nbsp;&nbsp; </EM> <A 
+href=".\iofTimes.txt"><EM>iofTimes.dtd</EM></A><EM>/</EM><A 
+href=".\iofTimes.xml"><EM>xml</EM></A><EM> </EM> </P>
+<P class=MsoNormal>&nbsp;</P>
+<P class=MsoNormal><EM>A ServiceRequest is an object used to 
+detail requests for such things as tent sites, result hard copies etc.&nbsp; The 
+sort of non standard items that each event offers to participants.</EM></P>
+<P class=MsoNormal><EM>A Transaction is an object for 
+storing financial records with.</EM></P>
+<P class=MsoNormal> &nbsp;</P>
+<P class=MsoNormal><EM>STANDALONE 
+STARTLIST<![if !supportEmptyParas]><![endif]> </EM> </P>
+
+<p class=MsoNormal><A 
+href=".\iofStartList.txt">iofStartList.dtd</A>/<A 
+href=".\iofStartList.xml">xml</A></p>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp; <A 
+href=".\iofCompetitor.txt">iofCompetitor.dtd</A>/<A 
+href=".\iofCompetitor.xml">xml</A></P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <A 
+href=".\iofPerson.txt">iofPerson.dtd</A>/<A 
+href=".\iofPerson.xml">xml</A></P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <A 
+href=".\iofServiceRequest.txt">iofServiceRequest.dtd</A>/<A 
+href=".\iofServiceRequest.xml">xml</A></P>
+<P class=MsoNormal>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <A 
+href=".\iofTransaction.txt">iofTransaction.dtd</A>/<A 
+href=".\iofTransaction.xml">xml</A></P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<A 
+href=".\iofAddress.txt">iofAddress.dtd</A>/<A 
+href=".\iofAddress.xml">xml</A></P>
+<P 
+class=MsoNormal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<A href=".\iofTele.txt">iofTele.dtd</A>/<A 
+href=".\iofTele.xml">xml</A></P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp; <A 
+href=".\iofCCard.txt">iofCCard.dtd</A>/<A 
+href=".\iofCCard.xml">xml</A></P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp; <A 
+href=".\iofTimes.txt">iofTimes.dtd</A>/<A 
+href=".\iofTimes.xml">xml</A></P>
+<P class=MsoNormal><EM>Tele is short for 
+telecommunication.</EM></P>
+<P class=MsoNormal>&nbsp;</P>
+<P class=MsoNormal><EM>STANDALONE COURSES/COURSE 
+LIST</EM>  </P>
+<P class=MsoNormal><A 
+href=".\iofCourseList.txt">iofCourseList.dtd</A>/<A 
+href=".\iofCourseList.xml">xml</A></P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp; <A 
+href=".\iofCourse.txt">iofCourse.dtd</A>/<A 
+href=".\iofCourse.xml">xml</A> </P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <A 
+href=".\iofControlInfo.txt">iofControlInfo.dtd</A>/<A 
+href=".\iofControlInfo.xml">xml</A> 
+</P>
+<P class=MsoNormal><EM>ControlInfo is another word for 
+ControlDescription with some e info added.</EM></P>
+<P class=MsoNormal>&nbsp;</P>
+<P class=MsoNormal><EM>STANDALONE LIST OF CONTROLS</EM>   </P>
+<P class=MsoNormal><A 
+href=".\iofControlList.txt">iofControlList.dtd</A>/<A 
+href=".\iofControlList.xml">xml</A></P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp;&nbsp;<A 
+href=".\iofControlInfo.txt">iofControlInfo.dtd</A>/<A 
+href=".\iofControlInfo.xml">xml</A></P>
+<P class=MsoNormal>&nbsp;</P>
+<P class=MsoNormal><EM>AN EVENT CLASS</EM>  </P>
+<P class=MsoNormal><A 
+href=".\iofEventClass.txt">iofEventClass.dtd</A>/<A 
+href=".\iofEventClass.xml">xml</A></P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp; <A 
+href=".\iofBaseClass.txt">iofBaseClass.dtd</A>/<A 
+href=".\iofBaseClass.xml">xml</A> </P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <A 
+href=".\iofBadgeGroup.txt">iofBadgeGroup.dtd</A>/<A 
+href=".\iofBadgeGroup.xml">xml</A> 
+</P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <A 
+href=".\iofBadgeLimit.txt">iofBadgeLimit.dtd</A>/<A 
+href=".\iofBadgeLimit.xml">xml</A> 
+</P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp; <A 
+href=".\iofRaceClass.txt">iofRaceClass.dtd</A>/<A 
+href=".\iofRaceClass.xml">xml</A> </P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp; <A 
+href=".\iofPunchingUnitType.txt">iofPunchingUnitType.dtd</A>/<A 
+href=".\iofPunchingUnitType.xml">xml</A> 
+</P>
+<P class=MsoNormal><EM>Badge refers to awards which many 
+nations offer for reaching certain standards (percent behind winner for 
+example).</EM></P>
+<P class=MsoNormal>&nbsp;</P>
+<P class=MsoNormal><EM>ORGANISATION</EM></P>
+<P class=MsoNormal><A 
+href=".\iofOrganisation.txt">iofOrganisation.dtd</A>/<A 
+href=".\iofOrganisation.xml">xml</A></P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp; <A 
+href=".\iofOrganisationType.txt">iofOrganisationType.dtd</A>/<A 
+href=".\iofOrganisationType.xml">xml</A></P>
+<P class=MsoNormal> &nbsp;&nbsp;&nbsp; <A 
+href=".\iofPerson.txt">iofPerson.dtd</A>/<A 
+href=".\iofPerson.xml">xml</A></P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <A 
+href=".\iofIdentity.txt">iofIdentity.dtd</A>/<A 
+href=".\iofIdentity.xml\">xml</A></P>
+<P class=MsoNormal> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <A 
+href=".\iofServiceRequest.txt">iofServiceRequest.dtd</A>/<A 
+href=".\iofServiceRequest.xml">xml</A></P>
+<P class=MsoNormal>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <A 
+href=".\iofTransaction.txt">iofTransaction.dtd</A>/<A 
+href=".\iofTransaction.xml">xml</A></P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<A 
+href=".\iofAddress.txt">iofAddress.dtd</A>/<A 
+href=".\iofAddress.xml">xml</A></P>
+<P 
+class=MsoNormal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<A href=".\iofTele.txt">iofTele.dtd</A>/<A 
+href=".\iofTele.xml">xml</A></P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp; <A 
+href=".\iofCountry.txt">iofCountry.dtd</A>/<A 
+href=".\iofCountry.xml">xml</A></P>
+<P class=MsoNormal><EM>A Club is a sub class of an 
+organisation for example.&nbsp; Media, sponsors, can be considered organisations 
+for example. </EM> </P>
+<P class=MsoNormal> &nbsp;</P>
+<P class=MsoNormal><EM>AN 
+EVENT&nbsp;(No entries, results or startlists as they conflict with 
+things like iofClub in the same xml file.&nbsp; Startlists, entries and results 
+should be created as separate documents.&nbsp; I would like to add such things 
+as sponsors and media collections at a later date. )</EM>       
+ </P>
+<P class=MsoNormal><A 
+href=".\iofEvent.txt">iofEvent.dtd</A>/<A 
+href=".\iofEvent.xml">xml</A></P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp; <A 
+href=".\iofEventForm.txt">iofEventForm.dtd</A>/<A 
+href=".\iofEventForm.xml">xml</A></P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp; <A 
+href=".\iofEventClassification.txt">iofEventClassification.dtd</A>/<A 
+href=".\iofEventClassification.xml">xml</A></P>
+<P 
+class=MsoNormal>&nbsp;&nbsp;&nbsp;&nbsp; <A 
+href=".\iofClub.txt">iofClub.dtd</A>/<A 
+href=".\iofClub.xml">xml</A>&nbsp; </P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <A 
+href=".\iofPerson.txt">iofPerson.dtd</A>/<A 
+href=".\iofPerson.xml">xml</A></P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <A 
+href=".\iofServiceRequest.txt">iofServiceRequest.dtd</A>/<A 
+href=".\iofServiceRequest.xml">xml</A></P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <A 
+href=".\iofTransaction.txt">iofTransaction.dtd</A>/<A 
+href=".\iofTransaction.xml">xml</A></P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<A 
+href=".\iofAddress.txt">iofAddress.dtd</A>/<A 
+href=".\iofAddress.xml">xml</A></P>
+<P 
+class=MsoNormal>&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<A href=".\iofTele.txt">iofTele.dtd</A>/<A 
+href=".\iofTele.xml">xml</A></P>
+<P 
+class=MsoNormal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <A 
+href=".\iofCountry.txt">iofCountry.dtd</A>/<A 
+href=".\iofCountry.xml">xml</A> </P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp;<A 
+href=".\iofEventClass.txt">iofEventClass.dtd</A>/<A 
+href=".\iofEventClass.xml">xml</A></P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <A 
+href=".\iofBaseClass.txt">iofBaseClass.dtd</A>/<A 
+href=".\iofBaseClass.xml">xml</A> </P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <A 
+href=".\iofBadgeGroup.txt">iofBadgeGroup.dtd</A>/<A 
+href=".\iofBadgeGroup.xml">xml</A> </P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <A 
+href=".\iofBadgeLimit.txt">iofBadgeLimit.dtd</A>/<A 
+href=".\iofBadgeLimit.xml">xml</A> </P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <A 
+href=".\iofRaceClass.txt">iofRaceClass.dtd</A>/<A 
+href=".\iofRaceClass.xml">xml</A> </P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <A 
+href=".\iofPunchingUnitType.txt">iofPunchingUnitType.dtd</A>/<A 
+href=".\iofPunchingUnitType.xml">xml</A> </P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp;<A 
+href=".\iofEventRace.txt">iofEventRace.dtd</A>/<A 
+href=".\iofEventRace.xml">xml</A></P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp;<A 
+href=".\iofService.txt">iofService.dtd</A>/<A 
+href=".\iofService.xml">xml</A></P>
+<P class=MsoNormal>&nbsp;</P>
+<P class=MsoNormal><EM>&nbsp;&nbsp;&nbsp;</EM></P>
+
+</div></EM>
+
+</body>
+
+</html>

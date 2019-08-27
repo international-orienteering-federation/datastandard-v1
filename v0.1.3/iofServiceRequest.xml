@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE ServiceRequest SYSTEM "iofServiceRequest.dtd">
+<ServiceRequest requested="1" delivered="1" modifyDate="2000.02.20">
+  <ServiceName>Tent Reservation</ServiceName>
+  <ServiceTransaction>
+    <Transaction account="4321abcd1234" foreignAccount="1234abcd" transactionDate="2000.02.20" amount="500" createDate="2000.02.20" modifyDate="2000.02.20"/>
+  </ServiceTransaction>
+</ServiceRequest>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!DOCTYPE Entry SYSTEM "iofEntry.dtd">
+
+<Entry createDate="2000.03.09" modifyDate="2000.03.09">
+  <CompetitorId>222671</CompetitorId>
+  <ClubId>STIK</ClubId>
+  <ClubName>Stora Tuna IK</ClubName>
+  <EntryClass id ="97" name="H40"/>
+</Entry>

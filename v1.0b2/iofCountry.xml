@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<!DOCTYPE Country SYSTEM "iofCountry.dtd">
+<Country name="Sweden" shortName="S"/>

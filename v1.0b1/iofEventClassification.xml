@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE EventClassification SYSTEM "iofEventClassification.dtd">
+
+<EventClassification>
+  <EventClassificationType name="MultiDay" shortName="MD" modifyDate="2000-02-20"/>
+</EventClassification>

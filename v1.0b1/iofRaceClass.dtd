@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!ENTITY % CourseList SYSTEM "iofCourseList.dtd">
+%CourseList;
+<!ENTITY % Identity SYSTEM "iofIdentity.dtd">
+%Identity;
+
+<!ELEMENT RaceClass (Identity, AllocationMethod, StartMethod, RaceClassStatus, CourseList)>
+<!ATTLIST RaceClass
+  firstStartTime            CDATA #REQUIRED
+  startInterval             CDATA #REQUIRED
+  numberOfVacants           CDATA #IMPLIED
+  administrationCode        CDATA #IMPLIED
+  noRankingRace             CDATA #IMPLIED
+  estimatedBestTime         CDATA #IMPLIED
+  estimatedLastPrizeTime    CDATA #IMPLIED
+  numberOfPrizes            CDATA #IMPLIED
+  prizeCeremonyTime         CDATA #IMPLIED
+  startNumberPrefix         CDATA #IMPLIED
+  startNumberBase           CDATA #IMPLIED
+  startNumberInterval       CDATA #IMPLIED
+  finishChute               CDATA #IMPLIED
+  modifyDate                CDATA #IMPLIED
+>
+<!ELEMENT AllocationMethod EMPTY>
+<!ATTLIST AllocationMethod value CDATA #REQUIRED>
+
+<!ELEMENT StartMethod EMPTY>
+<!ATTLIST StartMethod value CDATA #REQUIRED>
+
+<!ELEMENT RaceClassStatus EMPTY>
+<!ATTLIST RaceClassStatus value CDATA #REQUIRED>

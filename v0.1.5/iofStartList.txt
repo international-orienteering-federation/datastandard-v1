@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!ENTITY % Competitor SYSTEM "iofCompetitor.dtd">
+%Competitor;
+<!ENTITY % CCard SYSTEM "iofCCard.dtd">
+%CCard;
+<!ENTITY % Times SYSTEM "iofTimes.dtd">
+%Times;
+
+<!ELEMENT StartList (Starter)*>
+<!ELEMENT Starter (Competitor,((CCard?,Times) | Day+))>
+<!ATTLIST StartList ModifyDate CDATA #IMPLIED>
+<!ELEMENT Day (CCard?, Times)>
+<!ATTLIST Day Num CDATA #REQUIRED>
+

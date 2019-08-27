@@ -1,0 +1,86 @@
+<CourseData>
+
+  <Coordinate X="10" Y="-4" />
+
+  <ControlList>
+    <ControlInfo>
+     <Description>
+       <Box column="A">
+         <Symbol Order="1" Id="1"/>
+       </Box>
+       <Box column="B">
+         <Symbol Order="1" Id="32"/>
+       </Box>
+       <Box column="C" hasDiagonal="Y">
+         <Symbol Order="1" Id="247"/>
+       </Box>
+       <Box column="D">
+         <Text Order="1">2x4</Text>
+       </Box>
+       <Box column="F">
+         <Symbol Order="1" Id="245"/>
+       </Box>
+     </Description>
+     <EUnit UnitCode="31" Type="SI"/>
+    </ControlInfo>
+    <ControlInfo>
+     <Description>
+       <Box column="A">
+         <Symbol Order="1" Id="2"/>
+       </Box>
+       <Box column="B">
+         <Symbol Order="1" Id="33"/>
+       </Box>
+       <Box column="C">
+         <Symbol Order="1" Id="247"/>
+       </Box>
+       <Box column="D">
+         <Text Order="1">2x4</Text>
+       </Box>
+       <Box column="F">
+         <Symbol Order="1" Id="245"/>
+       </Box>
+     </Description>
+       <EUnit UnitCode="32" Type="SI"/>
+    </ControlInfo>
+  </ControlList>
+
+  <CourseList>
+    <RaceClassId>
+      <Identity type="classId" value="110"/>
+      <Identity type="eventId" value="2"/>
+      <Identity type="className" value="H21"/>
+    </RaceClassId>
+    <Course ID="101">
+      <RaceClass ID="110" />
+      <RaceClass ID="142" />
+      <CourseVariation ID="101" Name="101" Length="10500" Climb="234" StartID="2" NumberRunners="80" FinishID="2">
+        <StartPoint ControlCode="1"/>
+        <Control Num="1" Code="32" />
+        <Control Num="2" Code="34" />
+        <Control Num="3" Code="35" />
+        <Control Num="4" Code="37" />
+        <Control Num="5" Code="43" Info="Bypass private property" LegLength="334" MarkedRoute="Y"/>
+        <Control Num="6" Code="45" />
+        <Control Num="7" Code="56" />
+        <Control Num="8" Code="77" />
+        <FinishControl ControlCode="500"/>
+      </CourseVariation>
+    </Course>
+    <Course ID="102">
+      <CourseVariation ID="102" Name="102" Length="10560" Climb="254" StartID="2" NumberRunners="80" FinishID="2">
+        <StartPoint ControlCode="1"/>
+        <Control Num="1" Code="32" />
+        <Control Num="2" Code="33" />
+        <Control Num="3" Code="36" />
+        <Control Num="4" Code="37" />
+        <Control Num="5" Code="43" Info="Bypass private property" LegLength="334" MarkedRoute="Y"/>
+        <Control Num="6" Code="47" />
+        <Control Num="7" Code="58" />
+        <FinishControl ControlCode="500"/>
+      </CourseVariation>
+    </Course>
+  </CourseList>
+
+</CourseDate>
+

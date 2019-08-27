@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE ControlInfo SYSTEM "iofControlInfo.dtd">
+
+<ControlInfo Name="Sponsor-IOF" X_Coordinate="100" Y_Coordinate="234" >
+   <Description>
+     <Box column="1" first="1"/>
+     <Box column="2" first="132"/>
+     <Box column="3" first="aCode" second="anotherCode" hasDiagonal="Y"/>
+     <Box column="6" first="132"/>
+   </Description>
+   <EUnit UnitCode="31" Type="SI"/>
+</ControlInfo>

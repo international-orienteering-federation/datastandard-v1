@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!ENTITY % ServiceRequest SYSTEM "iofServiceRequest.dtd">
+%ServiceRequest;
+
+<!ENTITY % Address SYSTEM "iofAddress.dtd">
+%Address;
+
+<!ENTITY % Tele SYSTEM "iofTele.dtd">
+%Tele;
+
+<!ENTITY % Identity SYSTEM "iofIdentity.dtd">
+%Identity;
+
+<!ELEMENT Person (Name,Identity*,BirthDate?,Address?, Tele?, PersonServiceRequest?)>
+
+<!ATTLIST Person 
+ Class CDATA #IMPLIED
+ ClubName CDATA #IMPLIED
+ ClubID CDATA #IMPLIED
+ Sex (M|F) #IMPLIED
+ Nationality CDATA #IMPLIED
+ ModifyDate CDATA #IMPLIED>
+
+<!ELEMENT Name (Family,Given+)>
+<!ELEMENT Family (#PCDATA)>
+<!ELEMENT Given (#PCDATA) >
+<!ATTLIST Given order CDATA #IMPLIED> 
+<!ELEMENT BirthDate EMPTY>
+<!ATTLIST BirthDate 
+  Year CDATA #REQUIRED
+  Month CDATA #REQUIRED
+  Day CDATA #REQUIRED>
+
+<!ELEMENT PersonServiceRequest (ServiceRequest)>

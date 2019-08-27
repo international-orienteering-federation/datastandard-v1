@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE StartList SYSTEM "iofStartList.dtd">
+
+<StartList>
+ <Starter>
+ <Competitor EntClass="M50L" StartNumber="23">
+  <Person Class="M50" ClubName="Manchester and District Orienteering Club" ClubID="MDOC" Sex="M" Nationality="GBR">
+   <Name><Family>Watson</Family><Given>Ian</Given></Name>
+   <Identity Type="NAT" Value="222671"/>
+  </Person>
+ </Competitor>
+ <CCard Type="Emit" Id="45"/>
+ <Times><Start Hours="10" Mins="30" Secs ="00"/></Times>
+ </Starter>
+
+ <Starter>
+ <Competitor EntClass="M18A" StartNumber="24">
+  <Person Class="M18" ClubName="Manchester and District Orienteering Club" ClubID="MDOC" Sex="M" Nationality="GBR">
+   <Name><Family>Watson</Family><Given>Kevin</Given><Given>David</Given></Name>
+   <Identity Type="NAT" Value="222673"/>
+  </Person>
+ </Competitor>
+ <CCard Type="Emit" Id="46"/>
+ <Times><Start Hours="10" Mins="32" Secs ="00"/></Times>
+ </Starter>
+</StartList>

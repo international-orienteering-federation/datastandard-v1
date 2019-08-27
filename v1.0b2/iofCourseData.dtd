@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!ENTITY % CourseList SYSTEM "iofCourseList.dtd">
+%CourseList;
+<!ENTITY % ControlList SYSTEM "iofControlList.dtd">
+%ControlList;
+
+<!ELEMENT CourseData (Coordinate?,ControlList?,CourseList?)>
+<!ATTLIST CourseData
+  ModifyDate CDATA #IMPLIED>
+

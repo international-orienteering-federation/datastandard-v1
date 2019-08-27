@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE BaseClass SYSTEM "iofBaseClass.dtd">
+
+  <BaseClass name="H21 Elite" shortName="H21E" classId="10" lowAge="21" highAge="34" sex="M" teamEntry="N" maxNumberInClass="60" actualForRanking="Y" noTimePresentation="N" modifyDate="2000-02-20">
+    <ClassType name="Elite" shortName="E" modifyDate="2000-02-20"/>
+    <SubstituteClass classID="100"/>
+    <NotQualifiedSubstituteClass classId="100"/>
+    <BadgeGroup name="Gold" shortName="G" comment="Go for the Gold" modifyDate="2000.02.20"/>
+    <BadgeLimit timeFactor="15" modifyDate="2000-02-20">
+      <BadgeValue name="Gold" shortName="G" modifyDate="2000-02-20"/>
+    </BadgeLimit>
+    <EntryFee Name="Reguler Adult"  Amount="120.00"/>
+    <EntryFee Name="Reguler Junior" Amount="80.00"/>
+    <EntryFee Name="Late Adult"     Amount="240.00"/>
+    <EntryFee Name="Late Junior"    Amount="160.00"/>
+  </BaseClass>
+

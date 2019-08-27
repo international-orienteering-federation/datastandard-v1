@@ -1,0 +1,649 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./IOF%20XML%20Proposal_files/filelist.xml">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Ted de St. Croix</o:Author>
+  <o:LastAuthor>Ted de St. Croix</o:LastAuthor>
+  <o:Revision>5</o:Revision>
+  <o:TotalTime>273</o:TotalTime>
+  <o:Created>2000-02-15T09:46:00Z</o:Created>
+  <o:LastSaved>2000-02-15T14:41:00Z</o:LastSaved>
+  <o:Pages>3</o:Pages>
+  <o:Words>766</o:Words>
+  <o:Characters>4369</o:Characters>
+  <o:Lines>36</o:Lines>
+  <o:Paragraphs>8</o:Paragraphs>
+  <o:CharactersWithSpaces>5365</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:70.85pt 70.85pt 70.85pt 70.85pt;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal>This proposal for the IOF Standard Information Exchange
+using Extensible Markup Language(XML) assumes that users of these standards
+will want some flexibility depending on their situation.<span
+style="mso-spacerun: yes">  </span>In order to achieve this I have created
+DataTypeDefinitions (DTD) for single Entities.<span style="mso-spacerun: yes"> 
+</span>A standard set or collection of data such as Results is then created
+using a complex DTD which simply includes the necessary DTDs for each entity it
+needs to support.</p>
+
+<p class=MsoNormal>This proposal extends the work done by the IOF Standards Committee
+and specifically the proposal to use XML provided by Mr. Ian Watson of GBR.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><i style='mso-bidi-font-style:normal'><span
+style='font-size:9.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></i></p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ border:none;mso-border-alt:solid windowtext .5pt;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr>
+  <td width=725 valign=top style='width:435.0pt;border:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;?xml
+  version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ENTITY
+  % Competitor SYSTEM &quot;iofCompetitor.dtd&quot;&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>%Competitor;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ENTITY
+  % CCard SYSTEM &quot;iofCCard.dtd&quot;&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>%CCard;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ENTITY
+  % SplitTimes SYSTEM &quot;iofSplitTimes.dtd&quot;&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>%SplitTimes;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ENTITY
+  % Times SYSTEM &quot;iofTimes.dtd&quot;&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>%Times;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ELEMENT
+  Results (Result)*&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ELEMENT
+  Result (Competitor,CCard,SplitTimes,Times)&gt;</span></p>
+  </td>
+ </tr>
+ <tr style='height:16.8pt'>
+  <td width=725 valign=top style='width:435.0pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:16.8pt'>
+  <p class=MsoNormal>IofResult.dtd defines a complex Entity namely a Result.</p>
+  </td>
+ </tr>
+ <tr style='height:17.4pt'>
+  <td width=725 valign=top style='width:435.0pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:17.4pt'>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'>&lt;?xml version=&quot;1.0&quot;?&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'>&lt;!DOCTYPE Results SYSTEM &quot;iofResults.dtd&quot;&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'>&lt;Results&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><span style="mso-spacerun: yes"> </span>&lt;Result&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><span style="mso-spacerun: yes"> </span>&lt;Competitor
+  EntClass=&quot;M50L&quot; StartNumber=&quot;23&quot;&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><span style="mso-spacerun: yes">  </span>&lt;Person
+  Class=&quot;M50&quot; ID=&quot;222671&quot; ClubName=&quot;Manchester and
+  District Orienteering Club&quot; ClubID=&quot;MDOC&quot; Sex=&quot;M&quot;
+  Nationality=&quot;GBR&quot;&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><span style="mso-spacerun: yes">  
+  </span>&lt;Name&gt;&lt;Family&gt;Watson&lt;/Family&gt;&lt;Given&gt;Ian&lt;/Given&gt;&lt;/Name&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><span style="mso-spacerun: yes">   </span>&lt;BirthDate
+  Year=&quot;1947&quot; Month=&quot;05&quot; Day=&quot;19&quot;/&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><span style="mso-spacerun: yes">   </span>&lt;Address
+  Street=&quot;52 Leegate Road,Heaton Moor&quot; City=&quot;Stockport&quot;
+  ZipCode=&quot;SK4 4AX&quot; Country=&quot;UK&quot;&gt;&lt;/Address&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><span style="mso-spacerun: yes">  </span>&lt;/Person&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><span style="mso-spacerun:
+  yes"> </span>&lt;/Competitor&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><span style="mso-spacerun: yes"> </span>&lt;CCard Type=&quot;Emit&quot;
+  Num=&quot;45&quot;/&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><span style="mso-spacerun:
+  yes"> </span>&lt;SplitTimes&gt;&lt;T&gt;1:33&lt;/T&gt;&lt;T&gt;2:40&lt;/T&gt;&lt;/SplitTimes&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><span style="mso-spacerun: yes"> </span>&lt;Times
+  Start=&quot;10:30:00&quot; Fin=&quot;11:43:17&quot;
+  Result=&quot;1:13:17&quot;/&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><span style="mso-spacerun: yes"> </span>&lt;/Result&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><span style="mso-spacerun: yes"> </span>&lt;Result&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><span style="mso-spacerun: yes"> </span>&lt;Competitor
+  EntClass=&quot;M18A&quot; StartNumber=&quot;24&quot;&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><span style="mso-spacerun: yes">  </span>&lt;Person
+  Class=&quot;M18&quot; ID=&quot;222673&quot; ClubName=&quot;Manchester and District
+  Orienteering Club&quot; ClubID=&quot;MDOC&quot; Sex=&quot;M&quot;
+  Nationality=&quot;GBR&quot;&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><span style="mso-spacerun: yes">  
+  </span>&lt;Name&gt;&lt;Family&gt;Watson&lt;/Family&gt;&lt;Given&gt;Kevin&lt;/Given&gt;&lt;Given&gt;David&lt;/Given&gt;&lt;/Name&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><span style="mso-spacerun: yes">   </span>&lt;BirthDate
+  Year=&quot;1981&quot; Month=&quot;01&quot; Day=&quot;24&quot;/&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><span style="mso-spacerun: yes">   </span>&lt;Address
+  Street=&quot;52 Leegate Road,Heaton Moor&quot; City=&quot;Stockport&quot;
+  ZipCode=&quot;SK4 4AX&quot; Country=&quot;UK&quot;&gt;&lt;/Address&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><span style="mso-spacerun: yes">  </span>&lt;/Person&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><span style="mso-spacerun:
+  yes"> </span>&lt;/Competitor&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><span style="mso-spacerun: yes"> </span>&lt;CCard
+  Type=&quot;Emit&quot; Num=&quot;46&quot;/&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><span style="mso-spacerun:
+  yes"> </span>&lt;SplitTimes&gt;&lt;T&gt;1:46&lt;/T&gt;
+  &lt;T&gt;2:56&lt;/T&gt; &lt;T&gt;4:03&lt;/T&gt;&lt;/SplitTimes&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><span style="mso-spacerun: yes"> </span>&lt;Times
+  Start=&quot;10:32:00&quot; Fin=&quot;11:51:12&quot;
+  Result=&quot;1:19:12&quot;/&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><span style="mso-spacerun: yes"> </span>&lt;/Result&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'>&lt;/Results&gt;</span></p>
+  </td>
+ </tr>
+ <tr style='height:19.8pt'>
+  <td width=725 valign=top style='width:435.0pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:19.8pt'>
+  <p class=MsoNormal style='margin-left:-.3pt'>IofResults.XML contains several
+  entities defined by their individual dtds.</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ border:none;mso-border-alt:solid windowtext .5pt;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr>
+  <td width=725 valign=top style='width:435.0pt;border:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;?xml
+  version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ELEMENT
+  Person (Name,BirthDate,Address)&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ATTLIST
+  Person Class CDATA #REQUIRED&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ATTLIST
+  Person ID CDATA #REQUIRED&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ATTLIST
+  Person ClubName CDATA #REQUIRED&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ATTLIST
+  Person ClubID CDATA #REQUIRED&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ATTLIST
+  Person Sex (M|F) #REQUIRED&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ATTLIST
+  Person Nationality CDATA #REQUIRED&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ELEMENT
+  Name (Family,Given+)&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ELEMENT
+  Family (#PCDATA)&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ELEMENT
+  Given (#PCDATA) &gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ELEMENT
+  BirthDate EMPTY&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ATTLIST
+  BirthDate Year CDATA #REQUIRED&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ATTLIST
+  BirthDate Month CDATA #REQUIRED&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ATTLIST
+  BirthDate Day CDATA #REQUIRED&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ELEMENT
+  Address EMPTY&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ATTLIST
+  Address Street CDATA #REQUIRED&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ATTLIST
+  Address City CDATA #REQUIRED&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ATTLIST
+  Address ZipCode CDATA #REQUIRED&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ATTLIST
+  Address Country CDATA #REQUIRED&gt;</span></p>
+  </td>
+ </tr>
+ <tr style='height:13.8pt'>
+  <td width=725 valign=top style='width:435.0pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:13.8pt'>
+  <p class=MsoNormal style='margin-left:-.3pt'>IofPerson.dtd</p>
+  </td>
+ </tr>
+ <tr style='height:16.8pt'>
+  <td width=725 valign=top style='width:435.0pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:16.8pt'>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'>&lt;?xml version=&quot;1.0&quot;
+  encoding=&quot;ISO-8859-1&quot;?&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'>&lt;!DOCTYPE Person SYSTEM &quot;iofPerson.dtd&quot;&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'>&lt;Person Class=&quot;M50&quot; ID=&quot;222671&quot;
+  ClubName=&quot;Manchester and District Orienteering Club&quot;
+  ClubID=&quot;MDOC&quot; Sex=&quot;M&quot; Nationality=&quot;GBR&quot;&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><span style="mso-spacerun: yes"> 
+  </span>&lt;Name&gt;&lt;Family&gt;Watson&lt;/Family&gt;&lt;Given&gt;Ian&lt;/Given&gt;&lt;/Name&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><span style="mso-spacerun: yes">  </span>&lt;BirthDate
+  Year=&quot;1947&quot; Month=&quot;05&quot; Day=&quot;19&quot;/&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'><span style="mso-spacerun: yes">  </span>&lt;Address
+  Street=&quot;52 Leegate Road,Heaton Moor&quot; City=&quot;Stockport&quot;
+  ZipCode=&quot;SK4 4AX&quot; Country=&quot;UK&quot;/&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:-.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+  "Times New Roman"'>&lt;/Person&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='height:.3in'>
+  <td width=725 valign=top style='width:435.0pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:.3in'>
+  <p class=MsoNormal style='margin-left:-.3pt'>IofPerson.xml</p>
+  <p class=MsoNormal style='margin-left:-.3pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ border:none;mso-border-alt:solid windowtext .5pt;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr>
+  <td width=725 valign=top style='width:435.0pt;border:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;?xml
+  version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ENTITY
+  % Person SYSTEM &quot;iofPerson.dtd&quot;&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>%Person;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ELEMENT
+  Competitor (Person)&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ATTLIST
+  Competitor EntClass CDATA #REQUIRED&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ATTLIST
+  Competitor StartNumber CDATA #REQUIRED&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ATTLIST
+  Competitor Status CDATA #IMPLIED&gt;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=725 valign=top style='width:435.0pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>IofCompetitor.dtd</p>
+  </td>
+ </tr>
+ <tr style='height:19.8pt'>
+  <td width=725 valign=top style='width:435.0pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:19.8pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;?xml
+  version=&quot;1.0&quot;?&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!DOCTYPE
+  Competitor SYSTEM &quot;iofCompetitor.dtd&quot;&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><span
+  style="mso-spacerun: yes"> </span>&lt;Competitor EntClass=&quot;M50L&quot;
+  StartNumber=&quot;23&quot;&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><span
+  style="mso-spacerun: yes">  </span>&lt;Person Class=&quot;M50&quot; ID=&quot;222671&quot;
+  ClubName=&quot;Manchester and District Orienteering Club&quot;
+  ClubID=&quot;MDOC&quot; Sex=&quot;M&quot; Nationality=&quot;GBR&quot;&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><span
+  style="mso-spacerun: yes">  
+  </span>&lt;Name&gt;&lt;Family&gt;Watson&lt;/Family&gt;&lt;Given&gt;Ian&lt;/Given&gt;&lt;/Name&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><span
+  style="mso-spacerun: yes">   </span>&lt;BirthDate Year=&quot;1947&quot;
+  Month=&quot;05&quot; Day=&quot;19&quot;/&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><span
+  style="mso-spacerun: yes">   </span>&lt;Address Street=&quot;52 Leegate
+  Road,Heaton Moor&quot; City=&quot;Stockport&quot; ZipCode=&quot;SK4 4AX&quot;
+  Country=&quot;UK&quot;&gt;&lt;/Address&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><span
+  style="mso-spacerun: yes">  </span>&lt;/Person&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><span
+  style="mso-spacerun: yes"> </span>&lt;/Competitor&gt;</span></p>
+  </td>
+ </tr>
+ <tr style='height:17.4pt'>
+  <td width=725 valign=top style='width:435.0pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:17.4pt'>
+  <p class=MsoNormal>IofCompetitor.xml</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ border:none;mso-border-alt:solid windowtext .5pt;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr>
+  <td width=802 valign=top style='width:481.1pt;border:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;?xml
+  version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ELEMENT
+  CCard EMPTY&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ATTLIST
+  CCard Type CDATA #REQUIRED&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ATTLIST
+  CCard Num CDATA #REQUIRED&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ATTLIST
+  CCard MiscData CDATA #IMPLIED&gt;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=802 valign=top style='width:481.1pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>IofCCard.dtd</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=802 valign=top style='width:481.1pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;?xml
+  version=&quot;1.0&quot;?&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!DOCTYPE
+  CCard SYSTEM &quot;iofCCard.dtd&quot;&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><span
+  style="mso-spacerun: yes"> </span>&lt;CCard Type=&quot;Emit&quot;
+  Num=&quot;45&quot;/&gt;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=802 valign=top style='width:481.1pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>IofCCard.xml</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ border:none;mso-border-alt:solid windowtext .5pt;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr>
+  <td width=802 valign=top style='width:481.1pt;border:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;?xml
+  version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ELEMENT
+  SplitTimes (T*)&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ELEMENT
+  T (#PCDATA)&gt;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=802 valign=top style='width:481.1pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>IofSplitTimes.dtd</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=802 valign=top style='width:481.1pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;?xml
+  version=&quot;1.0&quot;?&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!DOCTYPE
+  SplitTimes SYSTEM &quot;iofSplitTimes.dtd&quot;&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><span
+  style="mso-spacerun: yes"> </span>&lt;SplitTimes&gt;&lt;T&gt;1:46&lt;/T&gt;
+  &lt;T&gt;2:56&lt;/T&gt; &lt;T&gt;4:03&lt;/T&gt;&lt;/SplitTimes&gt;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=802 valign=top style='width:481.1pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>IofSplitTimes.xml</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ border:none;mso-border-alt:solid windowtext .5pt;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr>
+  <td width=802 valign=top style='width:481.1pt;border:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;?xml
+  version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ELEMENT
+  Times EMPTY&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ATTLIST
+  Times Start CDATA #IMPLIED&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ATTLIST
+  Times Fin CDATA #IMPLIED&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!ATTLIST
+  Times Result CDATA #REQUIRED&gt;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=802 valign=top style='width:481.1pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>IofTimes.dtd</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=802 valign=top style='width:481.1pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;?xml
+  version=&quot;1.0&quot;?&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>&lt;!DOCTYPE
+  SplitTimes SYSTEM &quot;iofSplitTimes.dtd&quot;&gt;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><span
+  style="mso-spacerun: yes"> </span>&lt;Times Start=&quot;10:32:00&quot;
+  Fin=&quot;11:51:12&quot; Result=&quot;1:19:12&quot;/&gt;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=802 valign=top style='width:481.1pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>IofTimes.xml</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+</div>
+
+</body>
+
+</html>

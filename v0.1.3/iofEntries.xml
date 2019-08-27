@@ -1,0 +1,67 @@
+
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Entries SYSTEM "iofEntries.dtd">
+<Entries>
+
+	<Entry createDate="2000.5.4" modifyDate="2000.5.4">
+		<CompetitorId>3841-001</CompetitorId>
+		<ClubId>3841</ClubId>
+		<ClubName>Stora Tuna IK</ClubName>
+		<EntryClass id="10" name="H21 ELIT "/>
+		
+		<CCard Type="SI" Id="14842"/>
+		
+	</Entry>
+
+	<Entry createDate="2000.5.4" modifyDate="2000.5.4">
+		<CompetitorId>3841-086</CompetitorId>
+		<ClubId>3841</ClubId>
+		<ClubName>Stora Tuna IK</ClubName>
+		<EntryClass id="150" name="H45 MOTION "/>
+		
+		<CCard Type="SI" Id="14808"/>
+		
+	</Entry>
+
+	<Entry createDate="2000.5.4" modifyDate="2000.5.4">
+		<CompetitorId>3841-063</CompetitorId>
+		<ClubId>3841</ClubId>
+		<ClubName>Stora Tuna IK</ClubName>
+		<EntryClass id="110" name="H55 "/>
+		
+		<CCard Type="SI" Id="30347"/>
+		
+	</Entry>
+
+	<Entry createDate="2000.5.4" modifyDate="2000.5.4">
+		<CompetitorId>3841-077</CompetitorId>
+		<ClubId>3841</ClubId>
+		<ClubName>Stora Tuna IK</ClubName>
+		<EntryClass id="140" name="H45 "/>
+		
+		<CCard Type="SI" Id="14856"/>
+		
+	</Entry>
+
+	<Entry createDate="2000.5.4" modifyDate="2000.5.4">
+		<CompetitorId>3841-118</CompetitorId>
+		<ClubId>3841</ClubId>
+		<ClubName>Stora Tuna IK</ClubName>
+		<EntryClass id="180" name="H35 "/>
+		
+		<CCard Type="SI" Id="14967"/>
+		
+	</Entry>
+
+	<Entry createDate="2000.5.4" modifyDate="2000.5.4">
+		<CompetitorId>3841-113</CompetitorId>
+		<ClubId>3841</ClubId>
+		<ClubName>Stora Tuna IK</ClubName>
+		<EntryClass id="170" name="H35 LÅNG "/>
+		
+		<CCard Type="SI" Id="14889"/>
+		
+	</Entry>
+
+</Entries>
+

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE Entry SYSTEM "iofEntry.dtd">
+
+<Entry createDate="2000.03.09" modifyDate="2000.03.09">
+  <Competitor>
+    <Person Class="H40" ClubName="STIK" ClubID="341">
+      <Name>
+        <Family>de St. Croix 
+	</Family>
+	<Given>Ted</Given>
+      </Name>
+      <Identity Type="Nat" Value="341-110" />
+    </Person>
+  </Competitor> 
+  <EntryClass id ="97" name="H40"/>
+</Entry>

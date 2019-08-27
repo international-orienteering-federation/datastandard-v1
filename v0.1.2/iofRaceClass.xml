@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE RaceClass SYSTEM "iofRaceClass.dtd">
+
+  <RaceClass
+            firstStartTime="09.00.00" 
+            startInterval="1.00" 
+            numberOfVacants="10" 
+            administrationLineCode="1" 
+            noRankingRace="6"    
+            estimatedBestTime="57.00" 
+            estimatedLastPrizeTime="13.00.00" 
+            numberOfPrizes="3" 
+            prizeCeremonyTime="13.20.00" 
+            startNumberPrefix="E" 
+            startNumberBase="100" 
+            startNumberInterval="1"
+            finishChute="1" 
+            course="101"
+            modifyDate="2000.02.20">
+    <AllocationMethod value="Seeded"/>
+    <StartMethod value="Clock"/>
+    <RaceClassStatus value="RaceStatusClosed"/>
+  </RaceClass>
+

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE ControlList SYSTEM "iofControlList.dtd">
+
+<ControlList>
+
+  <ControlInfo>
+    <Description>
+      <Box column="A">
+        <Symbol Order="1" Id="1"/>
+      </Box>
+      <Box column="B">
+        <Symbol Order="1" Id="32"/>
+      </Box>
+      <Box column="C" hasDiagonal="Y">
+        <Symbol Order="1" Id="247"/>
+      </Box>
+      <Box column="D">
+        <Text Order="1">2x4</Text>
+      </Box>
+      <Box column="F">
+       <Symbol Order="1" Id="245"/>
+      </Box>
+    </Description>
+    <ControlPoint>
+      <Coordinate X="38.2" Y="-173.6"/>
+    </ControlPoint>
+   <EUnit UnitCode="31" Type="SI"/>
+  </ControlInfo>
+
+  <ControlInfo>
+    <Description>
+      <Box column="A">
+        <Symbol Order="1" Id="2"/>
+      </Box>
+      <Box column="B">
+        <Symbol Order="1" Id="33"/>
+      </Box>
+      <Box column="C">
+        <Symbol Order="1" Id="247"/>
+      </Box>
+      <Box column="D">
+        <Text Order="1">2x4</Text>
+      </Box>
+      <Box column="F">
+        <Symbol Order="1" Id="245"/>
+      </Box>
+    </Description>
+    <ControlPoint>
+      <Coordinate X="82.4" Y="-157.8"/>
+    </ControlPoint>
+    <EUnit UnitCode="32" Type="SI"/>
+  </ControlInfo>
+
+</ControlList>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE CourseList SYSTEM "iofCourseList.dtd">
+
+<CourseList>
+  <CourseId>101</CourseId>
+  <CourseId>102</CourseId>
+  <CourseId>103</CourseId>
+  <CourseId>104</CourseId>
+  <CourseId>105</CourseId>
+</CourseList>

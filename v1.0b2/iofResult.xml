@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE Results SYSTEM "iofResults.dtd">
+
+<Results>
+ <Result>
+ <Competitor EntClass="M50L" StartNumber="23">
+  <Person Class="M50" ID="222671" ClubName="Manchester and District Orienteering Club" ClubID="MDOC" Sex="M" Nationality="GBR">
+   <Name><Family>Watson</Family><Given>Ian</Given></Name>
+   <BirthDate Year="1947" Month="05" Day="19"/>
+   <Address Street="52 Leegate Road,Heaton Moor" City="Stockport" ZipCode="SK4 4AX" Country="UK"></Address>
+  </Person>
+ </Competitor>
+ <CCard Type="Emit" Num="45"/>
+ <SplitTimes><T>1:33</T><T>2:40</T></SplitTimes>
+ <Times Start="10:30:00" Fin="11:43:17" Result="1:13:17"/>
+ </Result>
+
+ <Result>
+ <Competitor EntClass="M18A" StartNumber="24">
+  <Person Class="M18" ID="222673" ClubName="Manchester and District Orienteering Club" ClubID="MDOC" Sex="M" Nationality="GBR">
+   <Name><Family>Watson</Family><Given>Kevin</Given><Given>David</Given></Name>
+   <BirthDate Year="1981" Month="01" Day="24"/>
+   <Address Street="52 Leegate Road,Heaton Moor" City="Stockport" ZipCode="SK4 4AX" Country="UK"></Address>
+  </Person>
+ </Competitor>
+ <CCard Type="Emit" Num="46"/>
+ <SplitTimes><T>1:46</T> <T>2:56</T> <T>4:03</T></SplitTimes>
+ <Times Start="10:32:00" Fin="11:51:12" Result="1:19:12"/>
+ </Result>
+</Results>

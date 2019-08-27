@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE Course SYSTEM "iofCourse.dtd">
+
+<Course ID="101" Name="101" Length="10500" Climb="234" StartID="2" NumberRunners="80" FinishID="2">
+<StartPoint>
+  <ControlInfo>
+     <Description>
+	<Box column="1" first="1"/>
+	<Box column="2" first="131"/>
+	<Box column="4" first="someCode"/>
+     </Description>
+     <EUnit UnitCode="31" Type="SI"/>
+  </ControlInfo>
+</StartPoint>
+<CourseControl Num="1">
+  <ControlInfo >
+     <Description>
+	<Box column="1" first="1"/>
+	<Box column="2" first="132"/>
+	<Box column="4" first="someCode"/>
+     </Description>
+     <EUnit UnitCode="32" Type="SI"/>
+  </ControlInfo>
+</CourseControl>
+<CourseControl Num="2" Info="Radio">
+  <ControlInfo Name="Sponsor name if you are so lucky">
+     <Description>
+	<Box column="1" first="1"/>
+	<Box column="2" first="133"/>
+	<Box column="4" first="someCode"/>
+     </Description>
+     <EUnit UnitCode="33" Type="SI"/>
+  </ControlInfo>
+</CourseControl>
+<CourseControl Num="3" Info="Pre warning">
+  <ControlInfo >
+     <Description>
+	<Box column="1" first="1"/>
+	<Box column="2" first="134"/>
+	<Box column="4" first="someCode"/>
+     </Description>
+     <EUnit UnitCode="34" Type="SI"/>
+  </ControlInfo>
+</CourseControl>
+<CourseControl Num="4" Info="Last control">
+  <ControlInfo>
+     <Description>
+	<Box column="1" first="1"/>
+	<Box column="2" first="200"/>
+	<Box column="4" first="someCode"/>
+     </Description>
+     <EUnit UnitCode="35" Type="SI"/>
+  </ControlInfo>
+</CourseControl>
+<FinishControl>
+  <ControlInfo>
+     <Description>
+	<Box column="1" first="1"/>
+	<Box column="2" first="900"/>
+     </Description>
+     <EUnit UnitCode="36" Type="SI"/>
+  </ControlInfo>
+</FinishControl>
+</Course>
+

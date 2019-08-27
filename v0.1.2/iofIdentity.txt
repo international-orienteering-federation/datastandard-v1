@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!ELEMENT Identity EMPTY>
+<!ATTLIST Identity 
+  IOFid    CDATA #IMPLIED
+  Natid    CDATA #IMPLIED
+  Orgid    CDATA #IMPLIED
+  Sysid    CDATA #IMPLIED
+>
+

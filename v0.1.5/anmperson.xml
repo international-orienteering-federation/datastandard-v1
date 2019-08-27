@@ -1,0 +1,177 @@
+
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Entries SYSTEM "iofEntries.dtd">
+<Entries>
+
+	<Entry createDate="2000.5.4" modifyDate="2000.5.4">
+		
+		<Person Class="10" ID="1" ClubName="Stora Tuna IK" ClubID="3841" Sex="M" Nationality="Swe">
+			<Name>
+				<Family>ALFREDSSON</Family>
+				<Given>JOHAN</Given>
+			</Name>
+		</Person>
+				
+		<ClubId>3841</ClubId>
+		<ClubName>Stora Tuna IK</ClubName>
+		<EntryClass id="10" name="H21 ELIT "/>
+		
+		<CCard Type="SI" Num="14842"/>
+		
+	</Entry>
+
+	<Entry createDate="2000.5.4" modifyDate="2000.5.4">
+		
+		<Person Class="150" ID="86" ClubName="Stora Tuna IK" ClubID="3841" Sex="M" Nationality="Swe">
+			<Name>
+				<Family>ANDERSSON</Family>
+				<Given>JAN ÅKE</Given>
+			</Name>
+		</Person>
+				
+		<ClubId>3841</ClubId>
+		<ClubName>Stora Tuna IK</ClubName>
+		<EntryClass id="150" name="H45 MOTION "/>
+		
+		<CCard Type="SI" Num="14808"/>
+		
+	</Entry>
+
+	<Entry createDate="2000.5.4" modifyDate="2000.5.4">
+		
+		<Person Class="110" ID="63" ClubName="Stora Tuna IK" ClubID="3841" Sex="M" Nationality="Swe">
+			<Name>
+				<Family>ERIKSSON</Family>
+				<Given>BERT</Given>
+			</Name>
+		</Person>
+				
+		<ClubId>3841</ClubId>
+		<ClubName>Stora Tuna IK</ClubName>
+		<EntryClass id="110" name="H55 "/>
+		
+		<CCard Type="SI" Num="30347"/>
+		
+	</Entry>
+
+	<Entry createDate="2000.5.4" modifyDate="2000.5.4">
+		
+		<Person Class="140" ID="77" ClubName="Stora Tuna IK" ClubID="3841" Sex="M" Nationality="Swe">
+			<Name>
+				<Family>FRANZON</Family>
+				<Given>GUNNAR</Given>
+			</Name>
+		</Person>
+				
+		<ClubId>3841</ClubId>
+		<ClubName>Stora Tuna IK</ClubName>
+		<EntryClass id="140" name="H45 "/>
+		
+		<CCard Type="SI" Num="14856"/>
+		
+	</Entry>
+
+	<Entry createDate="2000.5.4" modifyDate="2000.5.4">
+		
+		<Person Class="180" ID="118" ClubName="Stora Tuna IK" ClubID="3841" Sex="M" Nationality="Swe">
+			<Name>
+				<Family>LÖFGREN</Family>
+				<Given>TOMAS L</Given>
+			</Name>
+		</Person>
+				
+		<ClubId>3841</ClubId>
+		<ClubName>Stora Tuna IK</ClubName>
+		<EntryClass id="180" name="H35 "/>
+		
+		<CCard Type="SI" Num="14967"/>
+		
+	</Entry>
+
+	<Entry createDate="2000.5.4" modifyDate="2000.5.4">
+		
+		<Person Class="170" ID="113" ClubName="Stora Tuna IK" ClubID="3841" Sex="M" Nationality="Swe">
+			<Name>
+				<Family>LÖWEGREN</Family>
+				<Given>NIKLAS</Given>
+			</Name>
+		</Person>
+				
+		<ClubId>3841</ClubId>
+		<ClubName>Stora Tuna IK</ClubName>
+		<EntryClass id="170" name="H35 LÅNG "/>
+		
+		<CCard Type="SI" Num="14889"/>
+		
+	</Entry>
+
+	<Entry createDate="2000.5.4" modifyDate="2000.5.4">
+		
+		<Person Class="10" ID="20" ClubName="Stora Tuna IK" ClubID="3841" Sex="M" Nationality="Swe">
+			<Name>
+				<Family>SUNDBERG</Family>
+				<Given>ERIK</Given>
+			</Name>
+		</Person>
+				
+		<ClubId>3841</ClubId>
+		<ClubName>Stora Tuna IK</ClubName>
+		<EntryClass id="10" name="H21 ELIT "/>
+		
+		<CCard Type="SI" Num="14935"/>
+		
+	</Entry>
+
+	<Entry createDate="2000.5.4" modifyDate="2000.5.4">
+		
+		<Person Class="20" ID="23" ClubName="Stora Tuna IK" ClubID="3841" Sex="M" Nationality="Swe">
+			<Name>
+				<Family>ARVIDSSON</Family>
+				<Given>BJÖRN</Given>
+			</Name>
+		</Person>
+				
+		<ClubId>3841</ClubId>
+		<ClubName>Stora Tuna IK</ClubName>
+		<EntryClass id="20" name="H20 ELIT "/>
+		
+		<CCard Type="SI" Num="14814"/>
+		
+	</Entry>
+
+	<Entry createDate="2000.5.4" modifyDate="2000.5.4">
+		
+		<Person Class="20" ID="28" ClubName="Stora Tuna IK" ClubID="3841" Sex="M" Nationality="Swe">
+			<Name>
+				<Family>LÖFÅS</Family>
+				<Given>PETER</Given>
+			</Name>
+		</Person>
+				
+		<ClubId>3841</ClubId>
+		<ClubName>Stora Tuna IK</ClubName>
+		<EntryClass id="20" name="H20 ELIT "/>
+		
+		<CCard Type="SI" Num="14887"/>
+		
+	</Entry>
+
+	<Entry createDate="2000.5.4" modifyDate="2000.5.4">
+		
+		<Person Class="160" ID="101" ClubName="Stora Tuna IK" ClubID="3841" Sex="M" Nationality="Swe">
+			<Name>
+				<Family>DE ST CROIX</Family>
+				<Given>TED</Given>
+			</Name>
+		</Person>
+				
+		<ClubId>3841</ClubId>
+		<ClubName>Stora Tuna IK</ClubName>
+		<EntryClass id="160" name="H40 "/>
+		
+		<CCard Type="SI" Num="14830"/>
+		
+	</Entry>
+
+</Entries>
+

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!DOCTYPE ResultSelection SYSTEM "iofResultSelection.dtd">
+<ResultSelection number="10" modifyDate="2000.02.20">  
+  <ClassCollection>
+    <BaseClassID>18</BaseClassID>
+    <BaseClassID>19</BaseClassID>
+    <BaseClassID>17</BaseClassID>
+  </ClassCollection>
+</ResultSelection>

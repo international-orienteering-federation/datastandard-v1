@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE ControlInfo SYSTEM "iofControlInfo.dtd">
+
+<ControlInfo Name="Sponsor-IOF" X_Coordinate="100" Y_Coordinate="234" X_TextOffset="5" Y_TextOffset="6" FreeText="Place any text here" ModifyDate="2000.05.23">
+   <Description>
+     <Box column="A">
+       <Symbol Order="1" Id="245"/>
+     </Box>
+     <Box column="C">
+       <Symbol Order="1" Id="247"/>
+     </Box>
+     <Box column="D">
+       <Text Order="1">2x4</Text>
+     </Box>
+     <Box column="F">
+       <Symbol Order="1" Id="245"/>
+     </Box>
+   </Description>
+   <EUnit UnitCode="31" Type="SI"/>
+</ControlInfo>

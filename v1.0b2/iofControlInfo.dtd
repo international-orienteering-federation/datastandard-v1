@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!ELEMENT ControlInfo (Description?, ControlPoint?, EUnit*, PunchPattern*)>
+<!ATTLIST ControlInfo
+ ID CDATA #REQUIRED
+ X_Coordinate CDATA #IMPLIED
+ Y_Coordinate CDATA #IMPLIED 
+ X_TextOffset CDATA #IMPLIED
+ Y_TextOffset CDATA #IMPLIED
+ FreeText     CDATA #IMPLIED
+ ModifyDate   CDATA #IMPLIED
+>
+
+<!ELEMENT Description (Box*)>
+<!ELEMENT Box (Symbol | Text)?>
+
+<!ATTLIST Box
+  column  (A|B|C|D|E|F|G|H)  #REQUIRED
+  hasDiagonal (Y|N) "N"
+>
+
+<!ELEMENT Symbol EMPTY>
+<!ATTLIST Symbol 
+  Id       CDATA #REQUIRED
+>
+
+<!ELEMENT Text (#PCDATA)>
+ 
+<!ATTLIST Description
+  ModifyDate CDATA #IMPLIED
+>
+
+<!ELEMENT ControlPoint (Coordinate)>
+
+<!ELEMENT Coordinate EMPTY>
+<!ATTLIST Coordinate
+  X CDATA #REQUIRED
+  Y CDATA #REQUIRED>
+  
+<!ELEMENT EUnit EMPTY> 
+<!ATTLIST EUnit
+  UnitCode   CDATA #REQUIRED
+  Type       CDATA #REQUIRED
+  ModifyDate CDATA #IMPLIED
+>
+
+<!ELEMENT PunchPattern (#PCDATA)>

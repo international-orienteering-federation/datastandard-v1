@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!ENTITY % OrganisationType SYSTEM "iofOrganisationType.dtd">
+%OrganisationType;
+
+<!ENTITY % Person SYSTEM "iofPerson.dtd">
+%Person;
+
+<!ENTITY % Country SYSTEM "iofCountry.dtd">
+%Country;
+
+<!ELEMENT Organisation (OrganisationType, SuperOrganisation*, Country, Identity*, Address?, Tele?, Contact?, ClubServiceRequest*)>
+<!ATTLIST Organisation
+  name CDATA #REQUIRED
+  shortName CDATA #REQUIRED
+  region CDATA #IMPLIED
+  bankAccount CDATA #IMPLIED
+  merchantID CDATA #IMPLIED
+  modifyDate CDATA #IMPLIED>
+
+<!ELEMENT Contact (Person)>
+<!ELEMENT ClubServiceRequest (ServiceRequest)>
+<!ELEMENT SuperOrganisation (Identity)>

@@ -1,0 +1,28 @@
+<?xml version="1.0"  encoding="ISO-8859-1"?>
+<!DOCTYPE Club SYSTEM "iofClub.dtd">
+
+  <Club name="StoraTuna IK" shortName="STIK" Region="DOF" BankAccount="123456" MerchantID="123456" >
+    <Country name="Sweden" shortName="S"/>
+    <Identity Type="SOFT" Value="18"/>
+    <Address Street="malins väg 23" City="Borlänge" ZipCode="784 56" Country="Sweden"/> 
+    <Tele phoneNumber="4313864" faxNumber="76538" mobilePhoneNumber="070435 678" mailAddress="www.ebyran.se" modifyDate="2000.02.20"/>
+    <Contact>
+      <Person Sex="M">
+        <Name><Family>Watson</Family><Given>Ian</Given></Name>
+        <Identity Type="SOFT" Value="27721"/>
+        <Address Street="52 Leegate Road,Heaton Moor" City="Stockport" ZipCode="SK4 4AX" Country="UK"/>
+        <Tele phoneNumber="4313864" faxNumber="76538" mobilePhoneNumber="070435 678" mailAddress="www.ebyran.se" modifyDate="2000.02.20"/> 
+      </Person>
+    </Contact>
+    <ClubServiceRequest>
+      <ServiceRequest requested="43" delivered="0" modifyDate="2000.02.20">
+        <ServiceName>Tent Site</ServiceName>
+        <ServiceTransaction>
+           <Transaction account="4321abcd1234" foreignAccount="1234abcd" transactionDate="2000.02.20" amount="125" createDate="2000.02.20" modifyDate="2000.02.20"/>
+        </ServiceTransaction>
+      </ServiceRequest>
+    </ClubServiceRequest>
+    <ClubTransaction>
+      <Transaction account="4321abcd1234" foreignAccount="1234abcd" transactionDate="2000.02.20" amount="500" createDate="2000.02.20" modifyDate="2000.02.20"/>
+    </ClubTransaction>
+  </Club>
