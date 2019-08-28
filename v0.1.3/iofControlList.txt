@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!ENTITY % ControlInfo SYSTEM "iofControlInfo.dtd">
-%ControlInfo;
-
-<!ELEMENT ControlList (ControlInfo)*>
-<!ATTLIST ControlList 
-  ModifyDate CDATA #IMPLIED>
