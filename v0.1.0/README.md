@@ -7,4 +7,4 @@
 
 This proposal for the IOF Standard Information Exchange using Extensible Markup Language (XML) assumes that users of these standards will want some flexibility depending on their situation.  In order to achieve this I have created DataTypeDefinitions (DTD) for single Entities. A standard set or collection of data such as Results is then created using a complex DTD which simply includes the necessary DTDs for each entity it needs to support.
 
-This proposal extends the work done by the IOF Standards Committee and specifically the proposal to use XML provided by Mr. Ian Watson of GBR.
+This proposal extends the work done by the IOF Standards Committee and specifically the proposal to use [XML provided](https://github.com/international-orienteering-federation/datastandard-v1/wiki/Initial-thoughts) by Mr. Ian Watson of GBR.
