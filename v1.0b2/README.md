@@ -13,7 +13,7 @@ The position of a control is now seperated into a independent element, ControlPo
 ### CourseData
 In order to aggregate all information about controls and courses a CourseData element have been invented. This makes it possible to exchange all data about courses and controls in a single file.
 
-/Kell Sønnichsen (kell@soenniksen.dk)
+/Kell Sønnichsen
 
 ## STANDALONE ENTRIES 
 ```
