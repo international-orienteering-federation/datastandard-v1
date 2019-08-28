@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Person SYSTEM "iofPerson.dtd">
+
+<Person Class="M50" ID="222671" ClubName="Manchester and District Orienteering Club" ClubID="MDOC" Sex="M" Nationality="GBR">
+<Name><Family>Watson</Family><Given>Ian</Given></Name>
+<BirthDate Year="1947" Month="05" Day="19"/>
+<Address Street="52 Leegate Road,Heaton Moor" City="Stockport" ZipCode="SK4 4AX" Country="UK"/>
+</Person>

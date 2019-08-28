@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!ELEMENT Times EMPTY>
+<!ATTLIST Times Start CDATA #IMPLIED>
+<!ATTLIST Times Fin CDATA #IMPLIED>
+<!ATTLIST Times Result CDATA #REQUIRED>

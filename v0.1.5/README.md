@@ -11,7 +11,7 @@ PROPOSED IOF EVENT INFORMATION EXCHANGE STANDARD
 
  
 
-* [Previous Introduction version 1.4](https://github.com/international-orienteering-federation/datastandard-v1/tree/master/v0.1.4): This version contains some minor changes from 1.3 requested from Finn Arildsen and changes we made after working with the dtd and xml files in applications.
+* [Previous Introduction for version 1.4](https://github.com/international-orienteering-federation/datastandard-v1/tree/master/v0.1.4): This version contains some minor changes from 1.3 requested from Finn Arildsen and changes we made after working with the dtd and xml files in applications.
 
 
 * [Previous Introduction for version 1.3](https://github.com/international-orienteering-federation/datastandard-v1/tree/master/v0.1.3): This version contains some changes from 1.2 requested from Finn Arildsen and Kell Soennichsen.

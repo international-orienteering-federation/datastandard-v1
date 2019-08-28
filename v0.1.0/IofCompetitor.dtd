@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!ENTITY % Person SYSTEM "iofPerson.dtd">
+%Person;
+
+<!ELEMENT Competitor (Person)>
+<!ATTLIST Competitor EntClass CDATA #REQUIRED>
+<!ATTLIST Competitor StartNumber CDATA #REQUIRED>
+<!ATTLIST Competitor Status CDATA #IMPLIED>

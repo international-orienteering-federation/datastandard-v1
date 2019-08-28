@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!ENTITY % Competitor SYSTEM "iofCompetitor.dtd">
+%Competitor;
+<!ENTITY % CCard SYSTEM "iofCCard.dtd">
+%CCard;
+<!ENTITY % SplitTimes SYSTEM "iofSplitTimes.dtd">
+%SplitTimes;
+<!ENTITY % Times SYSTEM "iofTimes.dtd">
+%Times;
+
+<!ELEMENT Results (Result)*>
+<!ELEMENT Result (Competitor,CCard,SplitTimes,Times)>

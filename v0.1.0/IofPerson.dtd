@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!ELEMENT Person (Name,BirthDate,Address)>
+<!ATTLIST Person Class CDATA #REQUIRED>
+<!ATTLIST Person ID CDATA #REQUIRED>
+<!ATTLIST Person ClubName CDATA #REQUIRED>
+<!ATTLIST Person ClubID CDATA #REQUIRED>
+<!ATTLIST Person Sex (M|F) #REQUIRED>
+<!ATTLIST Person Nationality CDATA #REQUIRED>
+<!ELEMENT Name (Family,Given+)>
+<!ELEMENT Family (#PCDATA)>
+<!ELEMENT Given (#PCDATA) >
+<!ELEMENT BirthDate EMPTY>
+<!ATTLIST BirthDate Year CDATA #REQUIRED>
+<!ATTLIST BirthDate Month CDATA #REQUIRED>
+<!ATTLIST BirthDate Day CDATA #REQUIRED>
+<!ELEMENT Address EMPTY>
+<!ATTLIST Address Street CDATA #REQUIRED>
+<!ATTLIST Address City CDATA #REQUIRED>
+<!ATTLIST Address ZipCode CDATA #REQUIRED>
+<!ATTLIST Address Country CDATA #REQUIRED>
