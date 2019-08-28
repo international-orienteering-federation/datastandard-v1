@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<!ELEMENT Tele EMPTY>
-<!ATTLIST Tele 
-phoneNumber CDATA #IMPLIED
-faxNumber CDATA #IMPLIED
-mobilePhoneNumber CDATA #IMPLIED
-mailAddress CDATA #IMPLIED
-modifyDate CDATA #IMPLIED>
